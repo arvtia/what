@@ -1,6 +1,6 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 const ContactMeForm = () => {
   const [formSent, setFormSent] = useState(false);
   const [formData, setFormData] = useState({
@@ -14,14 +14,14 @@ const ContactMeForm = () => {
 
     emailjs
       .send(
-        "service_ID",         // replace with your EmailJS service ID
-        "template_ID",        // replace with your EmailJS template ID
+        "service_dl9pgdk",         // replace with your EmailJS service ID
+        "template_env5m0w",        // replace with your EmailJS template ID
         {
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        "user_ID"             // replace with your EmailJS public key
+        publicKey             // replace with your EmailJS public key
       )
       .then(() => {
         setFormSent(true);
@@ -33,14 +33,14 @@ const ContactMeForm = () => {
   };
 
   return (
-    <div className="mt-40 max-w-4xl mx-auto p-6 bg-white/20 backdrop-blur-md rounded-xl shadow-xl">
+    <div className="mt-40 max-w-2xl justify-center p-6 bg-white/20 backdrop-blur-md rounded-xl shadow-xl ">
       {formSent ? (
         <div className="text-center py-12 text-green-500 font-semibold text-xl animate-fade-in">
           📩 Mail delivered! Thanks for reaching out.
         </div>
       ) : (
         <form className="space-y-6" onSubmit={sendEmail}>
-          <h2 className="text-3xl font-bold text-center text-indigo-600">
+          <h2 className="text-3xl font-bold text-center text-black">
             Hey, let’s talk!
           </h2>
 
@@ -82,7 +82,7 @@ const ContactMeForm = () => {
 
           <button
             type="submit"
-            className="w-full py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all duration-200 ease-in-out"
+            className="w-full py-3 bg-indigo-500 text-white rounded-lg hover:bg-indigo-700 transition-all duration-200 ease-in-out shadow-md"
           >
              Send Message
           </button>
