@@ -16,6 +16,13 @@ function About() {
           <p className="text-center max-w-xl text-gray-500 text-sm md:text-base mt-2">
             I'm a passionate full-stack developer diving deep into web technologies and backend magic. Check out what I'm building and dreaming up!
           </p>
+          <a
+            href="https://drive.google.com/file/d/1uTKRXx9foJZusWgpTg8s5yjmBqyZrubO/view?usp=sharing" // replace with your actual link
+            download="Arvaz_Resume.pdf" // optional
+            className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition"
+          >
+            📥 Download Resume
+          </a>
         </div>
       </section>
     </>

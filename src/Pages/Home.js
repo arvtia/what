@@ -10,7 +10,7 @@ function Home() {
       
       <Grid/>
       <About />
-      <Projects />
+      {/* <Projects /> */}
 
     </>
   )
