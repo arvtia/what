@@ -35,6 +35,7 @@ const Footer =() =>{
                      <div className="py-3 px-3 flex"></div>
                   </div>
                </div>
+               <p className="text-center text-gray-700 text-sm font-thin ">Arvaz mansuri -2025</p>
             </div>
          </div>
       </>

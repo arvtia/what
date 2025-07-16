@@ -53,10 +53,13 @@ const navlinks = [
         {isOpen && (
           <div className="md:hidden px-6 pb-4">
             <ul className="flex flex-col gap-4 text-gray-800 font-medium">
-              <li className="hover:text-emerald-500 transition">Work</li>
-              <li className="hover:text-emerald-500 transition">About</li>
-              <li className="hover:text-emerald-500 transition">Blog</li>
-              <li className="hover:text-emerald-500 transition">Contact me</li>
+              {
+                navlinks.map((item, i)=>(
+                  <a href={item.Path}>
+                    <li className="hover:text-emerald-500 transition">{item.name}</li>
+                  </a>
+                ))
+              }
             </ul>
           </div>
         )}

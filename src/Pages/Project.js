@@ -1,10 +1,11 @@
+import DetailedProductField from "../Components/Projects/detailedProduct"
 
-function Project() {
+function ProjectPage() {
   return (
     <>
-      
+      <DetailedProductField />
     </>
   )
 }
 
-export default Project
+export default ProjectPage

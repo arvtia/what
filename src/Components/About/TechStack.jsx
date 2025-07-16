@@ -55,10 +55,10 @@ const TechStacks = () => {
         {techStack.map((tech, index) => (
           <div
             key={index}
-            className="group relative bg-white shadow-md p-4 rounded-lg flex flex-col items-center transition hover:shadow-xl hover:scale-[1.03]"
+            className="group relative bg-white shadow-md p-4 rounded-lg flex flex-col items-center transition hover:shadow-xl hover:scale-[1.03] "
           >
             <img
-              src={`/assets/icons/${tech.image}`} // assuming images are in public/assets/icons/
+              src={`/assets/icons/${tech.image}`} 
               alt={tech.name}
               className="w-16 h-16 object-contain"
             />
