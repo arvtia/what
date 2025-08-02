@@ -1,32 +1,32 @@
 const portfolioProjects = [
-  {
-    name: "News Website",
-    url: "http://restinuse.ct.ws/",
-    image: "news.png", // Add preview image here
-    icons: ["bi bi-filetype-php", "bi bi-filetype-js", "bi bi-filetype-css", "bi bi-gear"],
-    description: "Fully responsive news platform built with PHP, JavaScript, Bulma CSS, and plain CSS. Integrated asynchronous news data from newsapi.org with smart loading via throttle & debounce. Users can search, translate to multiple languages, and fetch articles from previous days with smooth scroll-triggered updates."
-  },
-  {
-    name: "Himalaya Yoga Website",
-    url: "https://mordernrestaurent.great-site.net/index.php",
-    image: "himalaya.png", // Add preview image here
-    icons: ["bi bi-filetype-php", "bi bi-filetype-css", "bi bi-filetype-js",],
-    description: "A performant remake of a slow WordPress-based site. Built with PHP and Bootstrap 5.3, delivering fast loading and dynamic pages. Functions like a CMS, allowing flexible content updates with interactive styling through custom CSS and JavaScript."
-  },
-  {
-    name: "Modern Restaurant",
-    url: "https://php-a01b0.wasmer.app/index.php",
-    image: "mordernrest.png", // Add preview image here
-    icons: [" bi bi-filetype-php", "bi bi-filetype-js", "bi bi-filetype-css", "bi bi-filetype-pdf"],
-    description: "Interactive restaurant site with dynamic header/footer using PHP. JavaScript handles cart logic, form submission, admin panel (session/local storage), and even emulates payment receipts through HTML-to-PDF conversion. Styled using Bootstrap 5.3 for full responsiveness and clarity."
-  },
-  {
-    name: "E-commerce (React)",
-    url: "https://gen-blue.vercel.app/",
-    image: "ecomm.png", // Add preview image here
-    icons: ["bi bi-filetype-jsx", "bi bi-digram-2", "bi bi-filetype-js", "bi bi-mongodb",],
-    description: "Customizable e-commerce platform using React. Dynamic admin panel allows slider, product, and navbar updates. Features include product API hosted on Render, localStorage for cart persistence, Redux Toolkit for state, React Router for navigation, and Framer Motion for smooth animations."
-  }
+   {
+      name: "Dropitall Secure Cloud storage",
+      url: "http://dropitall.in/",
+      image: "drpoitall.jpg", // Add preview image here
+      icons: ["bi bi-filetype-php", "bi bi-filetype-js", "bi bi-filetype-css", "bi bi-gear"],
+      description:" A cloud storage web applications integrated with a data warehouse provider to enable to users to add files and share them and download anywhere on any device which supprts web-browsing capabilities. User profile , create folder , user account reports. etcc are features"
+   },
+   {
+      name: "Himalaya Yoga Website",
+      url: "https://mordernrestaurent.great-site.net/index.php",
+      image: "himalaya.png", // Add preview image here
+      icons: ["bi bi-filetype-php", "bi bi-filetype-css", "bi bi-filetype-js",],
+      description: "A performant remake of a slow WordPress-based site. Built with PHP and Bootstrap 5.3, delivering fast loading and dynamic pages. Functions like a CMS, allowing flexible content updates with interactive styling through custom CSS and JavaScript."
+   },
+   {
+      name: "Modern Restaurant",
+      url: "https://php-a01b0.wasmer.app/index.php",
+      image: "mordernrest.png", // Add preview image here
+      icons: [" bi bi-filetype-php", "bi bi-filetype-js", "bi bi-filetype-css", "bi bi-filetype-pdf"],
+      description: "Interactive restaurant site with dynamic header/footer using PHP. JavaScript handles cart logic, form submission, admin panel (session/local storage), and even emulates payment receipts through HTML-to-PDF conversion. Styled using Bootstrap 5.3 for full responsiveness and clarity."
+   },
+   {
+      name: "E-commerce (React)",
+      url: "https://gen-blue.vercel.app/",
+      image: "ecomm.png", // Add preview image here
+      icons: ["bi bi-filetype-jsx", "bi bi-digram-2", "bi bi-filetype-js", "bi bi-mongodb",],
+      description: "Customizable e-commerce platform using React. Dynamic admin panel allows slider, product, and navbar updates. Features include product API hosted on Render, localStorage for cart persistence, Redux Toolkit for state, React Router for navigation, and Framer Motion for smooth animations."
+   }
 ];
 
 
