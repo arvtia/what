@@ -27,7 +27,7 @@ function Projects() {
   ];
 
   return (
-    <section className="min-h-screen text-black px-6 py-12">
+    <section className="min-h-screen text-black px-6 py-12 max-w-7xl mx-auto">
       <h2 className="text-4xl font-extrabold text-center mb-12">Featured Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {projects.map((project, index) => (

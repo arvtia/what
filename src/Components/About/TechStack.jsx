@@ -49,7 +49,7 @@ const techStack = [
 
 const TechStacks = () => {
   return (
-    <div className="w-7xl mx-auto px-6 py-10">
+    <div className="max-w-7xl mx-auto px-6 py-10">
       <h2 className="text-3xl font-bold mb-6">Tech Stack</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         {techStack.map((tech, index) => (

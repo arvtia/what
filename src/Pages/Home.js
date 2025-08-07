@@ -7,11 +7,8 @@ import Projects from '../Components/Projects/Projects'
 function Home() {
   return (
     <>
-      
       <Grid/>
-      <About />
-      {/* <Projects /> */}
-
+      <About/>
     </>
   )
 }

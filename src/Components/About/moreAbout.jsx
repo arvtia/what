@@ -4,7 +4,7 @@ const MoreAbout = () => {
 
   return (
     <>
-      <div className="w-7xl  px-6 py-20">
+      <div className="max-w-7xl mx-auto  px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8 ">
           {/* Text Section: col-span-3 */}
           <div className="md:col-span-2 lg:col-span-2">
