@@ -16,8 +16,8 @@ const navlinks = [
 
   return (
     <div className="w-full top-0 fixed inset-x-0 z-50 mb-5 mt-0 pb-3">
-      <nav className="md:w-[80%] md:mt-5 mx-auto justify-center bg-white/10 backdrop-blur-md shadow-lg ring-1 ring-gray-300 rounded-none md:rounded-full">
-        <header className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <nav className="md:w-[90%] lg:max-w-6xl md:mt-5 mx-auto justify-center  backdrop-blur-md  ring-1 ring-gray-300 rounded-none md:rounded-md">
+        <header className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold text-gray-800">
             <span className="text-emerald-500">Arvaz</span> Mansuri
