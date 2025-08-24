@@ -6,22 +6,22 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Track menu state
 
 const navlinks = [
-   {name: "Home", Path:"/" },
-   {name: "About me", Path:"/about" },
-   {name: "projects", Path:"/project" },
-   {name: "Contact me", Path:"/contact" },
-   {name: "Blogs", Path:"/Blogs" }
+  //  {name: "Home", Path:"/" },
+  //  {name: "About me", Path:"/about" },
+  //  {name: "projects", Path:"/project" },
+  //  {name: "Contact me", Path:"/contact" },
+   
 ];
 
 
   return (
-    <div className="w-full top-0 fixed inset-x-0 z-50 mb-5 mt-0 pb-3">
-      <nav className="md:w-[90%] lg:max-w-6xl md:mt-5 mx-auto justify-center  backdrop-blur-md  ring-1 ring-gray-300 rounded-none md:rounded-md">
+    <div className="w-full top-0 fixed inset-x-0 z-50  mt-0 pb-3">
+      <nav className="md:w-[90%] lg:max-w-6xl mx-auto justify-center  backdrop-blur-md  ring-1 ring-gray-300 rounded-none md:rounded-md">
         <header className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold text-gray-800">
+          <Link to={'/'} className="text-2xl font-bold text-gray-800">
             <span className="text-emerald-500">Arvaz</span> Mansuri
-          </div>
+          </Link>
 
           {/* Desktop Nav */}
           <ul className="hidden md:flex gap-4 text-gray-800 font-medium">

@@ -10,19 +10,19 @@ const aboutMeData = {
   links: [
     {
       icon: "bi bi-instagram", // Font Awesome class
-      url: "https://instagram.com/yourusername",
+      url: "https://www.instagram.com/cbrobo.info/",
     },
     {
       icon: "bi bi-github",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/arvtia",
     },
     {
       icon: "bi bi-linkedin",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/arvaz-mansuri-7a9835272/",
     },
     {
       icon: "bi bi-twitter-x",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://x.com/ArvazMansuri",
     }
   ],
 };
@@ -101,7 +101,7 @@ const HomePage = () => {
   return (
     <>
       <div className="bg-white text-gray-900 w-full">
-        <div className="max-w-6xl mx-auto  pt-20 border border-gray-200 p-6 ">
+        <div className="max-w-6xl mx-auto mt-8 border border-gray-200 p-6 ">
           {/* intro */}
           <AboutME 
             image={aboutMeData.image}
