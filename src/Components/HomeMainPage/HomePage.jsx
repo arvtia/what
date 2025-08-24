@@ -4,7 +4,7 @@ import { ProjectsMe } from "./ProjectsMe";
 
 const aboutMeData = {
   image: "/assets/images/download.png",
-  Name: "Arvaz",
+  Name: "Arvaz Mansuri",
   description:
     "Web developer, creative thinker, and digital artist. Passionate about building clean, responsive designs with Tailwind CSS.",
   links: [

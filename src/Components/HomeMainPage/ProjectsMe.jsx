@@ -3,7 +3,7 @@ export function ProjectsMe({ Projects }) {
     <section className="p-6 border border-gray-200  bg-white">
       <h3 className="text-xl font-bold text-neutral-800 mb-6">Projects</h3>
 
-      <div className="space-y-4">
+      <div className="space-y-5">
         {Projects.map((item, idx) => (
           <div
             key={idx}
@@ -14,7 +14,7 @@ export function ProjectsMe({ Projects }) {
               <img
                 src={item.image}
                 alt={`Preview of ${item.title}`}
-                className="w-full h-full object-contain rounded-t-md md:rounded-l-md md:rounded-t-none"
+                className="w-full h-fit object-contain rounded-t-md md:rounded-l-md md:rounded-t-none"
               />
             </div>
 
