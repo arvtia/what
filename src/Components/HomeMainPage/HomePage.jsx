@@ -102,7 +102,7 @@ const experienceData = [
   {
     position: "Full Stack Developer (Internship)",
     companyName: "IZS Technocrates Pvt Ltd",
-    duration: "Jan 2024 – Jun 2024", // 6 months
+    duration: "Dec 2024 – Jul 2025", // 6 months
     description:
       "Worked on both frontend and backend development, contributing to web application features, bug fixes, and performance improvements.",
   },
