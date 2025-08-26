@@ -7,15 +7,16 @@ export function ProjectsMe({ Projects }) {
         {Projects.map((item, idx) => (
           <div
             key={idx}
-            className="grid grid-cols-1 md:grid-cols-12 gap-6 border border-gray-200 rounded-md hover:shadow-sm transition-shadow duration-200"
+            className="grid grid-cols-1 md:grid-cols-12 border border-gray-200 rounded-md hover:shadow-sm transition-shadow duration-200"
           >
             {/* Image */}
-            <div className="md:col-span-4 p-5">
+            <div className="md:col-span-4 px-5 pt-2">
               <img
                 src={item.image}
                 alt={`Preview of ${item.title}`}
-                className="w-full h-fit object-contain rounded-t-md md:rounded-l-md md:rounded-t-none"
+                className="w-full h-fit object-contain rounded-t-md md:rounded-l-md md:rounded-t-none hidden md:block"
               />
+              <i className="bi bi-app-indicator md:hidden"></i>
             </div>
 
             {/* Content */}

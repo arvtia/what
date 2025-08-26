@@ -1,4 +1,5 @@
 import { AboutME } from "./AboutME";
+import { Experience } from "./Expirence";
 import { ProjectsMe } from "./ProjectsMe";
 
 
@@ -97,6 +98,23 @@ const projects = [
   },
 ];
 
+const experienceData = [
+  {
+    position: "Full Stack Developer (Internship)",
+    companyName: "IZS Technocrates Pvt Ltd",
+    duration: "Jan 2024 – Jun 2024", // 6 months
+    description:
+      "Worked on both frontend and backend development, contributing to web application features, bug fixes, and performance improvements.",
+  },
+  {
+    position: "Freelance Web / Full Stack Developer",
+    companyName: "Self-Employed",
+    duration: "Jul 2024 – Present",
+    description:
+      "Building responsive, user-friendly websites and applications for clients. Handling end-to-end development from design to deployment.",
+  },
+];
+
 const HomePage = () => {
   return (
     <>
@@ -110,6 +128,7 @@ const HomePage = () => {
             links={aboutMeData.links}
           />
           <ProjectsMe Projects={projects} />
+          <Experience experienceData = {experienceData} />
         </div>
       </div>
     </>
