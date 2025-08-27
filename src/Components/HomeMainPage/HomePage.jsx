@@ -1,6 +1,8 @@
 import { AboutME } from "./AboutME";
 import { Experience } from "./Expirence";
 import { ProjectsMe } from "./ProjectsMe";
+import { TechStack } from "./TechStack";
+
 
 
 const aboutMeData = {
@@ -47,55 +49,55 @@ const projects = [
     LiveLinks: "https://dropitall.in",
     iconLiveLink: "bi bi-box-arrow-up-right",
   },
-  {
-    image: "./assets/pages/himalaya.PNG", // Himalaya Yoga image path here
-    title: "Himalaya Yoga Website",
-    description:
-      "A performant remake of a slow WordPress-based site. Built with PHP and Bootstrap 5.3, delivering fast-loading, dynamic pages. Functions like a CMS, allowing flexible content updates with interactive styling through custom CSS and JavaScript.",
-    tags: [
-      { techstack: "PHP" },
-      { techstack: "Bootstrap 5.3" },
-      { techstack: "JavaScript" },
-      { techstack: "Custom CSS" },
-    ],
-    dateFrom: "2023",
-    dateTo: "2023",
-    LiveLinks: "https://mordernrestaurent.great-site.net/index.php?i=1",
-    iconLiveLink: "bi bi-box-arrow-up-right",
-  },
-  {
-    image: "./assets/pages/mordernrest.PNG", // Modern Restaurant image path here
-    title: "Modern Restaurant",
-    description:
-      "Interactive restaurant site with dynamic header/footer using PHP. JavaScript handles cart logic, form submission, admin panel (session/local storage), and emulates payment receipts via HTML-to-PDF conversion. Styled with Bootstrap 5.3 for full responsiveness.",
-    tags: [
-      { techstack: "PHP" },
-      { techstack: "Bootstrap 5.3" },
-      { techstack: "JavaScript" },
-      { techstack: "HTML-to-PDF" },
-    ],
-    dateFrom: "2023",
-    dateTo: "2023",
-    LiveLinks: "https://php-a01b0.wasmer.app/index.php",
-    iconLiveLink: "bi bi-box-arrow-up-right",
-  },
-  {
-    image: "./assets/pages/ecomm.PNG", // E-commerce React image path here
-    title: "E-commerce (React)",
-    description:
-      "Customizable e-commerce platform using React. Dynamic admin panel allows slider, product, and navbar updates. Features include product API hosted on Render, localStorage for cart persistence, Redux Toolkit for state, React Router for navigation, and Framer Motion for animations.",
-    tags: [
-      { techstack: "React" },
-      { techstack: "Redux Toolkit" },
-      { techstack: "React Router" },
-      { techstack: "Framer Motion" },
-      { techstack: "Bootstrap 5.3" },
-    ],
-    dateFrom: "2024",
-    dateTo: "2024",
-    LiveLinks: "https://gen-blue.vercel.app/",
-    iconLiveLink: "bi bi-box-arrow-up-right",
-  },
+  // {
+  //   image: "./assets/pages/himalaya.PNG", // Himalaya Yoga image path here
+  //   title: "Himalaya Yoga Website",
+  //   description:
+  //     "A performant remake of a slow WordPress-based site. Built with PHP and Bootstrap 5.3, delivering fast-loading, dynamic pages. Functions like a CMS, allowing flexible content updates with interactive styling through custom CSS and JavaScript.",
+  //   tags: [
+  //     { techstack: "PHP" },
+  //     { techstack: "Bootstrap 5.3" },
+  //     { techstack: "JavaScript" },
+  //     { techstack: "Custom CSS" },
+  //   ],
+  //   dateFrom: "2023",
+  //   dateTo: "2023",
+  //   LiveLinks: "https://mordernrestaurent.great-site.net/index.php?i=1",
+  //   iconLiveLink: "bi bi-box-arrow-up-right",
+  // },
+  // {
+  //   image: "./assets/pages/mordernrest.PNG", // Modern Restaurant image path here
+  //   title: "Modern Restaurant",
+  //   description:
+  //     "Interactive restaurant site with dynamic header/footer using PHP. JavaScript handles cart logic, form submission, admin panel (session/local storage), and emulates payment receipts via HTML-to-PDF conversion. Styled with Bootstrap 5.3 for full responsiveness.",
+  //   tags: [
+  //     { techstack: "PHP" },
+  //     { techstack: "Bootstrap 5.3" },
+  //     { techstack: "JavaScript" },
+  //     { techstack: "HTML-to-PDF" },
+  //   ],
+  //   dateFrom: "2023",
+  //   dateTo: "2023",
+  //   LiveLinks: "https://php-a01b0.wasmer.app/index.php",
+  //   iconLiveLink: "bi bi-box-arrow-up-right",
+  // },
+  // {
+  //   image: "./assets/pages/ecomm.PNG", // E-commerce React image path here
+  //   title: "E-commerce (React)",
+  //   description:
+  //     "Customizable e-commerce platform using React. Dynamic admin panel allows slider, product, and navbar updates. Features include product API hosted on Render, localStorage for cart persistence, Redux Toolkit for state, React Router for navigation, and Framer Motion for animations.",
+  //   tags: [
+  //     { techstack: "React" },
+  //     { techstack: "Redux Toolkit" },
+  //     { techstack: "React Router" },
+  //     { techstack: "Framer Motion" },
+  //     { techstack: "Bootstrap 5.3" },
+  //   ],
+  //   dateFrom: "2024",
+  //   dateTo: "2024",
+  //   LiveLinks: "https://gen-blue.vercel.app/",
+  //   iconLiveLink: "bi bi-box-arrow-up-right",
+  // },
 ];
 
 const experienceData = [
@@ -115,6 +117,8 @@ const experienceData = [
   },
 ];
 
+
+
 const HomePage = () => {
   return (
     <>
@@ -129,6 +133,7 @@ const HomePage = () => {
           />
           <ProjectsMe Projects={projects} />
           <Experience experienceData = {experienceData} />
+          <TechStack />
         </div>
       </div>
     </>
