@@ -3,7 +3,9 @@ import ParentWrapper from "./MainPageComponents/ParentWrapper"
 const MainPage = () => {
    return (
       <>
-         <ParentWrapper />
+         <div className="h-screen">
+            <ParentWrapper />
+         </div>
       
       </>
    )
