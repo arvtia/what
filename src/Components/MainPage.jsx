@@ -6,7 +6,6 @@ const MainPage = () => {
          <div className="h-screen">
             <ParentWrapper />
          </div>
-      
       </>
    )
 }
