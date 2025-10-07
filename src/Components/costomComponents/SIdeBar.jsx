@@ -1,24 +1,45 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Sidebar = ({ items, headerName, logo }) => {
+  const [isActive, setIsActive] = useState(true); // start expanded
+
   return (
-    <aside className="h-screen w-64 bg-white text-black p-2">
-      <div className="flex items-center gap-2 mb-6">
-        <img src={logo} alt="Logo" className="w-8 h-8" />
-        <h1 className="text-lg font-semibold">{headerName}</h1>
+    <aside
+      className={`h-screen ${
+        isActive ? 'w-64' : 'w-16'
+      } bg-white text-black p-2 transition-all duration-300`}
+    >
+      {/* Header */}
+      <div className="flex justify-between items-center mb-4">
+        <div className="flex items-center gap-2">
+          
+          {isActive && <h1 className="text-lg font-semibold">{headerName}</h1>}
+        </div>
+        <i
+          className="bi bi-layout-sidebar-inset px-2 py-1 bg-neutral-50 cursor-pointer rounded"
+          onClick={() => setIsActive(!isActive)}
+        ></i>
       </div>
+
+      {/* Nav */}
       <nav className="space-y-2">
         {items.map((item, index) => (
           <NavLink
             key={index}
             to={item.Path}
-            className={({ isActive }) =>
-              `block px-3 py-2 rounded transition ${
-                isActive ? 'bg-neutral-200' : 'hover:bg-neutral-100 hover:shadow-inner'
+            className={({ isActive: active }) =>
+              `flex items-center gap-2 px-3 py-2 rounded transition ${
+                active
+                  ? 'bg-neutral-200'
+                  : 'hover:bg-neutral-100 hover:shadow-inner'
               }`
             }
           >
-            {item.label}
+            <i
+              className={`${item.Icon} text-lg px-2 py-1 hover:bg-neutral-100 rounded-md `}
+            ></i>
+            {isActive && <span>{item.label}</span>}
           </NavLink>
         ))}
       </nav>

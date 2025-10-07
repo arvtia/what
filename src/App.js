@@ -21,10 +21,6 @@ function App() {
               <Route path="settings" element={<div>Settings</div>} />
             </Route>
 
-
-            
-
-    
           </Routes>
       </BrowserRouter>
     </>
