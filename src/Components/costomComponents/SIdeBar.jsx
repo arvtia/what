@@ -14,7 +14,7 @@ const Sidebar = ({ items, headerName, logo }) => {
             to={item.Path}
             className={({ isActive }) =>
               `block px-3 py-2 rounded transition ${
-                isActive ? 'bg-neutral-200' : 'hover:bg-neutral-100'
+                isActive ? 'bg-neutral-200' : 'hover:bg-neutral-100 hover:shadow-inner'
               }`
             }
           >
