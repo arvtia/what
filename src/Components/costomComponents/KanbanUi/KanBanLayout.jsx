@@ -20,7 +20,7 @@ const KanBanUILayout =()=>{
 
       const updatedPosts = [...KanBanData, newPost];
       setKanBanData(updatedPosts);
-      localStorage.setItem('kanban-card', JSON.stringify(updatedPosts));
+      localStorage.setItem('kanban-posts', JSON.stringify(updatedPosts));
       setIsActive(false);
       
 
@@ -62,7 +62,7 @@ const KanBanUILayout =()=>{
 
             </div>
             {/* layout for kanban */}
-            <KanBanBoard  KanBanData={KanBanData}/>
+            <KanBanBoard KanBanData={KanBanData} setKanBanData={setKanBanData} />
 
             {isActive && (
                <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">

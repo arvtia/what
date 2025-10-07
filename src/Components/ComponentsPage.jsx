@@ -15,7 +15,7 @@ const ComponentsPage = () => {
       <>
          <div className="w-full bg-white flex gap-1">
             <Sidebar  items={menuItems} headerName="Heading" logo="https://symbols.thecommonvein.net/wp-content/uploads/2021/09/web-symbols-020.png"/>
-            <main className="flex-1 p-4">
+            <main className="flex-1 ">
                
                <Outlet />
             </main>
