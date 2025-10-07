@@ -3,7 +3,7 @@ import Sidebar from "./costomComponents/SIdeBar"
 import { Outlet } from "react-router-dom";
 
 const menuItems = [
-  { label: 'Kanban Board', value: 'dashboard', Path: '/component/accordian' },
+  { label: 'Kanban Board', value: 'dashboard', Path: '/component/kanban' },
   { label: 'Profile', value: 'profile', Path: '/component/installation' },
   { label: 'Settings', value: 'settings', Path: '/component/settings' },
 ];

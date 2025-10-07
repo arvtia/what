@@ -16,7 +16,7 @@ function App() {
           
             <Route path="/component" element={<ComponentsPage />}>
               <Route index element={<div>Welcome to Components</div>} />
-              <Route path="accordian" element={<KanBanUILayout />} />
+              <Route path="kanban" element={<KanBanUILayout />} />
               <Route path="installation" element={<div>Installation</div>} />
               <Route path="settings" element={<div>Settings</div>} />
             </Route>
