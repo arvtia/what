@@ -7,7 +7,7 @@ const Sidebar = ({ items, headerName, logo }) => {
   return (
     <aside
       className={`h-screen ${
-        isActive ? 'w-64' : 'w-16'
+        isActive ? 'w-64' : 'w-20'
       } bg-white text-black p-2 transition-all duration-300`}
     >
       {/* Header */}
