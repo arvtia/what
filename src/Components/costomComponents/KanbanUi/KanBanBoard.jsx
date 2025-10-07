@@ -59,14 +59,14 @@ const KanBanBoard = ({ KanBanData, setKanBanData }) => {
 
 
    return (
-    <div className="w-full p-2 h-screen relative">
+    <div className="w-full p-2 h-full relative">
 
       <div className="grid grid-cols-3 gap-2">
       {/* To Do Column */}
-         <div className="w-full rounded-md bg-white h-screen p-2 space-y-2">
+         <div className="w-full rounded-md bg-white h-auto p-2 space-y-2">
             <p className="text-start px-2 py-1 rounded-sm w-full font-mono">To Do</p>
             <div
-               className="space-y-2 px-1 py-2 mt-2 h-96 bg-white"
+               className="space-y-2 px-1 py-2 mt-2 min-h-screen max-h-auto bg-white"
                onDragOver={handleDragOver}
                onDrop={(e) => handleDrop(e, "toDo")}
             >
@@ -109,10 +109,10 @@ const KanBanBoard = ({ KanBanData, setKanBanData }) => {
          </div>
 
          {/* In Progress Column */}
-         <div className="w-full rounded-md bg-white h-screen p-2 space-y-2">
+         <div className="w-full rounded-md bg-white h-auto p-2 space-y-2">
             <p className="text-start px-2 py-1 rounded-sm w-full font-mono">In Progress</p>
             <div
-               className="space-y-2 px-1 py-2 mt-2 h-96 bg-white"
+               className="space-y-2 px-1 py-2 mt-2 min-h-screen max-h-auto bg-white"
                onDragOver={handleDragOver}
                onDrop={(e) => handleDrop(e, "inProgress")}
             >
@@ -154,10 +154,10 @@ const KanBanBoard = ({ KanBanData, setKanBanData }) => {
          </div>
 
          {/* Done Column */}
-         <div className="w-full rounded-md bg-white h-screen p-2 space-y-2">
+         <div className="w-full rounded-md bg-white h-auto p-2 space-y-2">
             <p className="text-start px-2 py-1 rounded-sm w-full font-mono">Done</p>
             <div
-               className="space-y-2 px-1 py-2 mt-2 h-96 bg-white"
+               className="space-y-2 px-1 py-2 mt-2 min-h-screen max-h-auto bg-white"
                onDragOver={handleDragOver}
                onDrop={(e) => handleDrop(e, "Done")}
             >
