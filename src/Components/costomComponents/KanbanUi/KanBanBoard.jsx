@@ -210,7 +210,7 @@ const KanBanBoard = ({ KanBanData, setKanBanData }) => {
                      onChange={(e) => setEditText(e.target.value)}
                   />
                   <textarea
-                     className="px-2 py-2 w-full border rounded"
+                     className="px-2 py-2 h-64 bg-neutral-100 shadow-inner w-full border rounded"
                      value={editContext}
                      onChange={(e) => setEditContext(e.target.value)}
                      placeholder="Add context..."
@@ -225,7 +225,7 @@ const KanBanBoard = ({ KanBanData, setKanBanData }) => {
                      </button>
                      <button
                         type="submit"
-                        className="px-3 py-1 rounded bg-indigo-600 text-white hover:bg-indigo-700"
+                        className="px-3 py-1 rounded bg-neutral-600 text-white hover:bg-neutral-700"
                      >
                         Update
                      </button>

@@ -75,6 +75,7 @@ return(
                         onChange={(e) => setPostText(e.target.value)}
                         className="px-2 py-1 rounded-md bg-neutral-100"
                         placeholder="Enter task"
+                        required
                      />
                      <textarea name="Tasks" id="TaskParah" placeholder="Fixing padding on the heading..." value={postContext} className="text-md text-black font-mono bg-neutral-50 py-2 px-2 w-full min-h-[300px]" onChange={(e)=>setPostContext(e.target.value)}>
                      </textarea>
