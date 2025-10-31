@@ -1,10 +1,11 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import Footer from './Pages/footer';
 import NoPage from './Components/NoPage/NoPage';
 import MainPage from './Components/MainPage';
 import ComponentsPage from './Components/ComponentsPage';
 import KanBanUILayout from './Components/costomComponents/KanbanUi/KanBanLayout';
+import { CardsShowCase } from './Components/costomComponents/cards/CardsShowCase';
+import LayoutDashboard from './Components/AiInterface/LayoutAi';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
               <Route path="installation" element={<div>Installation</div>} />
               <Route path="settings" element={<div>Settings</div>} />
             </Route>
+            <Route path='/cards' element={<CardsShowCase />} />
+            <Route path='/ai' element={<LayoutDashboard />} />
 
           </Routes>
       </BrowserRouter>
