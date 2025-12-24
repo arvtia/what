@@ -22,10 +22,7 @@ const AboutIntro = () => {
                   <a href="https://www.linkedin.com/in/arvaz-mansuri-7a9835272/">
                      <i className="bi bi-linkedin px-2 py-1 text-orange-400 rounded-md hover:bg-orange-100"></i>
                   </a>
-
                </div>
-
-
             </div>
          </div>
       </>

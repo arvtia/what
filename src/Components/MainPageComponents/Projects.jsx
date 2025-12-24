@@ -20,7 +20,37 @@ const projects = [
     duration: "Ongoing",
     link: "https://gen-blue.vercel.app/",
     adminPanel: "/admin"
-  }
+   }  ,
+
+   {
+      name: "Gift Hampers Business",
+      description:
+         "Family-run gifting venture built with Next.js, offering curated hampers for special occasions. Includes an admin panel for managing products, categories, and orders, with a focus on polished UI/UX and seamless customer experience.",
+      techStack: [
+         "Next.js 16",
+         "React.js",
+         "Tailwind CSS",
+         "Framer Motion",
+         "Node.js",
+         "Express.js",
+         "MongoDB Atlas",
+         "Cloudinary (for product images)",
+         "Razorpay (for payments)"
+      ],
+      duration: "Ongoing",
+      link: "https://blog-three-kohl-26.vercel.app/", // replace with actual if available
+      adminPanel: "/admin",
+      features: [
+         "Curated gift hampers for birthdays, weddings, and festive occasions",
+         "Next.js App Router with dynamic API routes",
+         "Admin panel for CRUD operations on products and orders",
+         "Secure JWT-based authentication and role-based access",
+         "Product catalog with high-quality images and smooth UI animations",
+         "Order tracking and customer communication",
+         "Integrated Razorpay payment gateway for online transactions"
+      ],
+      focus: "Family-run gifting venture combining design, technology, and personalized experiences"
+   }
 ];
 
 const Projects =()=>{
