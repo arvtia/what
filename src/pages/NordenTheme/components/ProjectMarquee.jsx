@@ -36,7 +36,7 @@ const NordenProjectMarquee = () => {
     <div className="mt-3 bg-[#F9F9F9] rounded-md overflow-hidden">
 
       <div className="relative bg-white w-fit mb-5 rounded-br-2xl shadow-sm">
-         <h2 className=" text-xl px-2 pr-3 py-1 text-neutral-800">Featured work</h2>
+         <h2 className=" text-xl px-2 pr-3 py-2 text-neutral-800">Featured work</h2>
          <InvertedCorner className="absolute rotate-180 text-white" />
          <InvertedCorner className="absolute rotate-180 text-white top-0 -right-6" />
       </div>
