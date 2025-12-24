@@ -1,4 +1,5 @@
 import NordenRating from "./NordenTheme/components/NordenRating"
+import NordenProjectMarquee from "./NordenTheme/components/ProjectMarquee"
 import NordenCleanUI from "./NordenTheme/NordenAbout"
 import NordenNavbar from "./NordenTheme/NordenNavbar"
 
@@ -12,6 +13,7 @@ const NordenVersion = () => {
                <NordenNavbar />
                <NordenCleanUI />
                <NordenRating />
+               <NordenProjectMarquee />
                
             </div>
          </div>

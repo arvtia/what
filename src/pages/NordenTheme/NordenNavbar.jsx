@@ -1,8 +1,8 @@
-import React from 'react'
+
 import SlidingBadge from './components/SlidingBadge'
 
 // The SVG Corner Component
-const InvertedCorner = ({ className }) => (
+export const InvertedCorner = ({ className }) => (
   <svg 
     viewBox="0 0 100 100" 
     fill="none" 
