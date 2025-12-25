@@ -98,7 +98,7 @@ const ProductImagesGallery = ({ project }) => {
       <div className="mt-12">
          <h3 className="text-xl font-bold px-2 mb-3">Project Gallery</h3>
          
-         <div className={`relative transition-all duration-700 ease-in-out overflow-hidden ${!isActive ? "max-h-[100vh]" : "max-h-full"}`}>
+         <div className={`relative transition-all duration-700 ease-in-out overflow-hidden ${!isActive ? "max-h-[50vh] md:max-h-[70vh]" : "max-h-full"}`}>
             
             <div className="grid grid-cols-1">
                {validImages.map((src, idx) => (
