@@ -1,0 +1,18 @@
+@keyframes handshake {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-15deg); }
+  40% { transform: rotate(10deg); }
+  60% { transform: rotate(-10deg); }
+  80% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-handshake {
+  display: inline-block;
+  transform-origin: bottom right; /* Mimics the wrist movement */
+}
+
+/* This triggers the animation when the parent button is hovered */
+.group:hover .animate-handshake {
+  animation: handshake 0.6s ease-in-out infinite;
+}

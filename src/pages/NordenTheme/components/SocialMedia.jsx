@@ -45,20 +45,30 @@ const NordenSocialMedia = () => {
          </div>
 
 
-         <div className="p-3 mt-8 grid grid-cols-1 space-y-3">
-            {
-               SocialMediaArray.map((i, idx)=>(
-                  <>
-                     <div key={idx} className="p-3 ease-in rounded-md bg-white ring-1 ring-neutral-100 flex justify-between gap-2" >
-                        <a href={i.link} className="underline-offset-2 underline ">{i.name}</a>
-                        <div className="p-1">
-                           {i.icon}
-                        </div>
-                     </div>
-                  </>
-               ))
-            }
-         </div>
+         <div className="p-3 mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+            {SocialMediaArray.map((i, idx) => (
+               <a 
+                  key={idx} 
+                  href={i.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group p-4 rounded-xl bg-white border border-neutral-100 flex items-center justify-between transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-1"
+               >
+                  <div className="flex flex-col">
+                  <span className="text-sm font-bold text-neutral-800 underline-offset-4 group-hover:underline">
+                     {i.name}
+                  </span>
+                  <span className="text-[10px] uppercase tracking-widest text-neutral-400 font-medium">
+                     Follow
+                  </span>
+                  </div>
+
+                  <div className="p-2 rounded-lg bg-neutral-50 text-neutral-500   transition-colors duration-300">
+                  {i.icon}
+                  </div>
+               </a>
+            ))}
+            </div>
       </div>
    )
 }

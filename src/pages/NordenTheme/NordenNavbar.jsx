@@ -57,7 +57,6 @@ const containerRef = useRef(null);
          {/* dropdown menu */}
          {
             isActive && (
-               
                <div ref={containerRef} className="absolute rounded-b-2xl inset-0 bg-black z-10 ">
                   <div className="pt-14 rounded-b-2xl relative bg-black overflow-hidden p-2 ">
                      <div className="w-full select-none grid grid-cols-2 gap-2">
@@ -72,8 +71,7 @@ const containerRef = useRef(null);
                         }
                      </div>
                   </div>
-               </div>
-               
+               </div> 
             )
          }
          

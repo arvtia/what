@@ -10,6 +10,7 @@ import NordenSocialMedia from "./NordenTheme/components/SocialMedia"
 import NordenProjectView from "./NordenTheme/components/Projects/NordenProjectView"
 import NordenProjectPhoto from "./NordenTheme/components/Projects/ProjectPhoto"
 import NordenProjectDetails from "./NordenTheme/components/Projects/NorderOneProjectPage"
+import NordenLetsTalkPage from "./NordenTheme/components/contact/NordenPage"
 
 
 
@@ -71,5 +72,11 @@ export const NordenProjectPage = () =>{
       <>
          <NordenProjectDetails />
       </>
+   )
+}
+
+export const NorderLetsTalkPage = () =>{
+   return(
+      <NordenLetsTalkPage  />
    )
 }
