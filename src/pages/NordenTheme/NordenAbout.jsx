@@ -55,7 +55,7 @@ export default function NordenCleanUI() {
 
                     {/* State 2: Hover (The "Action" state) */}
                     <div className="flex items-center justify-center gap-2 h-6 text-yellow-400">
-                      <span>07838 315511</span>
+                      <span>Call Now</span>
                       <span className="text-lg translate-x-1 transition-transform duration-300">→</span>
                     </div>
                     
