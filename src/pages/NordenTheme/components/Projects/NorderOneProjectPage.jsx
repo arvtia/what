@@ -128,10 +128,15 @@ const ProductImagesGallery = ({ project }) => {
          <div className={`flex mt-2 mb-4 ${isActive ? 'justify-end' : 'justify-center'}`}>
             <button 
                onClick={() => setIsActive(!isActive)}
-               className="bg-black text-white text-base px-4 py-3 rounded-full font-bold shadow-xl hover:scale-105 transition-all duration-300 active:scale-95 flex items-center gap-2"
+               className="bg-black text-white text-base px-4 py-2 rounded-full font-bold shadow-xl hover:scale-105 transition-all duration-300 active:scale-95 flex items-center gap-2"
             >
                {isActive ? (
-                  <>Hide Images <span className="rotate-180">↓</span></>
+                  <div className="flex gap-2 items-center">
+                     Hide images 
+                     <div className="rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                     </div>
+                  </div>
                ) : (
                   <div className="flex gap-2 items-center">
                      View all images
