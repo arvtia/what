@@ -54,9 +54,10 @@ import SlidingBadge from "./SlidingBadge";
     image: "https://i.ibb.co/MxgyW6bd/dropitall.png",
     images: [
       "https://i.ibb.co/MxgyW6bd/dropitall.png",
-      "", // add URL
-      "", // add URL
-      ""  // add URL
+      "https://i.ibb.co/9zP7vm4/Adobe-Express-Photos-6f32f6cf99cf45a190e244babc6d46a7-Copy-Edited.png", // add URL
+      "https://i.ibb.co/9m7SV0F6/Adobe-Express-Photos-f7689cf802244205aa7cc7fd3e18cdad-Copy-Edited.png", // add URL
+      "https://i.ibb.co/SwDVg7qh/Adobe-Express-Photos-bdbc57276a6f45e3a3e7bbd4feeb3051-Copy-Edited.png",
+      "https://i.ibb.co/vxzFjBGv/Adobe-Express-Photos-8bb89b28129340ad8fe413e03a921952-Copy-Edited.png"  // add URL
     ],
     link: "https://www.dropitall.in/", // add final URL
     intro:
@@ -95,9 +96,14 @@ import SlidingBadge from "./SlidingBadge";
     image: "https://i.ibb.co/RThngqHD/coupleconnect.png",
     images: [
       "https://i.ibb.co/RThngqHD/coupleconnect.png",
-      "", // add URL
-      "", // add URL
-      ""  // add URL
+      "https://i.ibb.co/4R8gSFcf/Adobe-Express-Photos-19d5e7c85ebb47ffa243efc35ee0b988-Copy-Edited.png",
+      "https://i.ibb.co/qM7gF6Hm/Adobe-Express-Photos-39928870dae1495982ebf96051d5562a-Copy-Edited.png", // add URL
+      "https://i.ibb.co/yntqYjmw/Adobe-Express-Photos-ac33724bf2f540fe88eb9f0d9f34c1a7-Copy-Edited.png", // add URL
+      "https://i.ibb.co/pv0DB7T6/Adobe-Express-Photos-5e8dfea3757c4328a8489a79ed56f8ae-Copy-Edited.png",
+      "https://i.ibb.co/fVJtYNQY/Adobe-Express-Photos-e9eaf6a385764431bb23b2e37a326599-Copy-Edited.png" ,
+      "https://i.ibb.co/0Vmmf0Nh/Adobe-Express-Photos-c6ab14d46d8b461c86704cd3b831fe67-Copy-Edited.png",
+      "https://i.ibb.co/n8wL4h64/Adobe-Express-Photos-a06d9cc740474889a92efc1e81bb7c30-Copy-Edited.png",
+      "https://i.ibb.co/GQDsP8w0/Adobe-Express-Photos-29b14bb91f834c74af20a29b33991e85-Copy-Edited.png",
     ],
     link: "https://x-couple-relation.vercel.app/login", // add final URL
     intro:
@@ -135,9 +141,11 @@ import SlidingBadge from "./SlidingBadge";
     image: "https://i.ibb.co/tMHKmT7D/ecomm.png",
     images: [
       "https://i.ibb.co/tMHKmT7D/ecomm.png",
-      "", // add URL
-      "", // add URL
-      ""  // add URL
+      "https://i.ibb.co/gXD4wCX/Adobe-Express-Photos-1160d68a254a47cfbb965fd7932a30d6-Copy-Edited.png",
+      "https://i.ibb.co/GQDc8LfF/Adobe-Express-Photos-9857aa976cbd40808a3dfdf917d18b9e-Copy-Edited.png",
+      "https://i.ibb.co/0y7gGyQb/Adobe-Express-Photos-b9fb0c409da44a948ad24f76d2caf7ff-Copy-Edited.png",
+      "https://i.ibb.co/rGYBKkFK/Adobe-Express-Photos-0c85ad8a4566446aa6f8c2da02a5bfac-Copy-Edited.png",
+       // add URL
     ],
     link: "https://gen-blue.vercel.app/", // add final URL
     intro:
