@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SlidingBadge from "./components/SlidingBadge";
 
 export default function NordenCleanUI() {
@@ -63,9 +64,9 @@ export default function NordenCleanUI() {
                 </div>
               </a>
 
-            <button className="px-4 py-2 bg-white border border-neutral-200 text-neutral-900 rounded-lg hover:shadow-lg font-bold hover:bg-neutral-50 transition-all">
+            <Link to={'/work'} className="px-4 py-2 bg-white border border-neutral-200 text-neutral-900 rounded-lg hover:shadow-lg font-bold hover:bg-neutral-50 transition-all">
               View Work
-            </button>
+            </Link>
           </div>
         </section>
 

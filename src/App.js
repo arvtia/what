@@ -4,7 +4,8 @@ import NoPage from './Components/NoPage/NoPage';
 import ComponentsPage from './Components/ComponentsPage';
 import LayoutDashboard from './Components/AiInterface/LayoutAi';
 import NewVersionPage from './pages/NewVersionPage';
-import NordenVersion, { NordenAboutMePage, NordenHomePage, NordenWorkPage } from './pages/NordenVersion';
+import NordenVersion, { NordenAboutMePage, NordenHomePage, NordenProjectPage, NordenWorkPage } from './pages/NordenVersion';
+import { Divide } from 'phosphor-react';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               {/* This renders when path is "/about" */}
               <Route path="about" element={<NordenAboutMePage />} />
               <Route path='work' element={<NordenWorkPage />} />
+              <Route path='work/:projectId' element={ <NordenProjectPage />} />
             </Route>
 
 

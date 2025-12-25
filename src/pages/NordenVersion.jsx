@@ -8,7 +8,9 @@ import NordenFooter from "./NordenTheme/NordenFooter"
 import NordenNavbar from "./NordenTheme/NordenNavbar"
 import NordenSocialMedia from "./NordenTheme/components/SocialMedia"
 import NordenProjectView from "./NordenTheme/components/Projects/NordenProjectView"
-import NordenProjectPhoto from "./NordenTheme/components/Projects/NordenProjectPhoto"
+import NordenProjectPhoto from "./NordenTheme/components/Projects/ProjectPhoto"
+import NordenProjectDetails from "./NordenTheme/components/Projects/NorderOneProjectPage"
+
 
 
 
@@ -58,6 +60,15 @@ export const NordenWorkPage =() =>{
       <>
          <NordenProjectView />
          <NordenProjectPhoto />
+      </>
+   )
+}
+
+
+export const NordenProjectPage = () =>{
+   return(
+      <>
+         <NordenProjectDetails />
       </>
    )
 }

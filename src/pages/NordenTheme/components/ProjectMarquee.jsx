@@ -2,17 +2,19 @@ import { InvertedCorner } from "../NordenNavbar";
 import SlidingBadge from "./SlidingBadge";
 
  export const PROJECTS = [
-  {
+  { 
+    id: 1,
     title: "Gift Hampers",
     type: "E-commerce Business",
     image: "https://i.ibb.co/tMxDT5wF/Gift-Hampers.png",
     images: [
       "https://i.ibb.co/tMxDT5wF/Gift-Hampers.png",
-      "", // add URL
-      "", // add URL
-      ""  // add URL
+      "https://i.ibb.co/hxtrmvGp/Adobe-Express-Photos-23b7ea52fb6b4627b81887b25f53bd3a-Copy-Edited.png", // add URL
+      "https://i.ibb.co/5WsGjgFw/Adobe-Express-Photos-104500d48fb44b8e9e8e9cd07fb87f56-Copy-Edited.png", // add URL
+      "https://i.ibb.co/DPccQTcL/Adobe-Express-Photos-51e708b46525406b8dc16f763fabcab7-Copy-Edited.png",
+      "https://i.ibb.co/7tv7kSM3/Adobe-Express-Photos-894aa920aea7401d9fe7c4ffc6e27caa-Copy-Edited.png"  // add URL
     ],
-    link: "", // add final URL
+    link: "https://blog-three-kohl-26.vercel.app/category", // add final URL
     intro:
       "A family-run gifting venture built on Next.js, designed to showcase curated hampers with polished, minimal UI and smooth interactions. The goal was to make selection and checkout feel delightful while keeping operations simple for a small business.",
     problem:
@@ -44,6 +46,7 @@ import SlidingBadge from "./SlidingBadge";
     status: "Ongoing"
   },
   {
+    id: 2,
     title: "Dropitall.in",
     type: "Cloud Storage",
     image: "https://i.ibb.co/MxgyW6bd/dropitall.png",
@@ -53,7 +56,7 @@ import SlidingBadge from "./SlidingBadge";
       "", // add URL
       ""  // add URL
     ],
-    link: "", // add final URL
+    link: "https://www.dropitall.in/", // add final URL
     intro:
       "A cross‑platform, minimal file sharing and storage solution focused on speed, clarity, and friction‑less transfers.",
     problem:
@@ -83,6 +86,7 @@ import SlidingBadge from "./SlidingBadge";
     status: "Active development"
   },
   {
+    id:3,
     title: "Couple's Connect",
     type: "Calendar & Memory Sharing",
     image: "https://i.ibb.co/RThngqHD/coupleconnect.png",
@@ -92,7 +96,7 @@ import SlidingBadge from "./SlidingBadge";
       "", // add URL
       ""  // add URL
     ],
-    link: "", // add final URL
+    link: "https://x-couple-relation.vercel.app/login", // add final URL
     intro:
       "A playful, private space for couples to plan, journal memories, and celebrate moments together.",
     problem:
@@ -121,6 +125,7 @@ import SlidingBadge from "./SlidingBadge";
     status: "Prototype live"
   },
   {
+    id:4,
     title: "Gen Blue Ecomm",
     type: "Fast E-commerce",
     image: "https://i.ibb.co/tMHKmT7D/ecomm.png",
@@ -130,7 +135,7 @@ import SlidingBadge from "./SlidingBadge";
       "", // add URL
       ""  // add URL
     ],
-    link: "", // add final URL
+    link: "https://gen-blue.vercel.app/", // add final URL
     intro:
       "A performance‑focused e‑commerce experience with dynamic product presentation and a near‑instant, intuitive admin panel.",
     problem:
