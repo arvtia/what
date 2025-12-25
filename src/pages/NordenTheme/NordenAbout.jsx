@@ -39,26 +39,29 @@ export default function NordenCleanUI() {
          </p>
 
           <div className="flex gap-4 mt-10">
-            <button className="group relative px-4 py-2 bg-black text-white rounded-lg font-bold overflow-hidden">
-               {/* The Sliding Container */}
-               <div className="relative h-6 overflow-hidden">
+            <a 
+                href="tel:+447838315511" 
+                className="group relative inline-block px-4 py-2 bg-black text-white rounded-lg font-bold overflow-hidden"
+              >
+                {/* The Sliding Container */}
+                <div className="relative h-6 overflow-hidden">
                   <div className="transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-6">
-                     
-                     {/* State 1: Default */}
-                     <div className="flex items-center justify-center gap-2 h-6">
-                     <span>Book a Call</span>
-                     <span className="text-lg">→</span>
-                     </div>
+                    
+                    {/* State 1: Default */}
+                    <div className="flex items-center justify-center gap-2 h-6">
+                      <span>Tap to Call</span>
+                      <span className="text-lg">→</span>
+                    </div>
 
-                     {/* State 2: Hover (The "Action" state) */}
-                     <div className="flex items-center justify-center gap-2 h-6 text-yellow-400">
-                     <span>Let's Talk</span>
-                     <span className="text-lg translate-x-1 transition-transform duration-300">→</span>
-                     </div>
-                     
+                    {/* State 2: Hover (The "Action" state) */}
+                    <div className="flex items-center justify-center gap-2 h-6 text-yellow-400">
+                      <span>07838 315511</span>
+                      <span className="text-lg translate-x-1 transition-transform duration-300">→</span>
+                    </div>
+                    
                   </div>
-               </div>
-            </button>
+                </div>
+              </a>
 
             <button className="px-4 py-2 bg-white border border-neutral-200 text-neutral-900 rounded-lg hover:shadow-lg font-bold hover:bg-neutral-50 transition-all">
               View Work
