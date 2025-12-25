@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import SlidingBadge from './components/SlidingBadge'
-import {Link} from "react-router-dom"
+import {Link, Links, NavLink} from "react-router-dom"
 
 const RoutesNavbar = [
    {  link : "/work", name:'Work'},
@@ -80,7 +80,7 @@ const containerRef = useRef(null);
          {/* LEFT BLOCK */}
          <div className="relative flex gap-3 z-20 bg-white items-center p-2 rounded-br-2xl shadow-sm">
             <div className="flex gap-1 items-center pl-2">
-               <div className="size-4 hover:bg-neutral-300 bg-black shadow-xl rounded-full transition-colors cursor-pointer" />
+               <NavLink to={'/'}  className=" size-4 hover:bg-neutral-300 bg-black shadow-xl rounded-full transition-colors cursor-pointer" ></NavLink>
                <SlidingBadge 
                   heightClass="h-8" 
                   className="rounded-lg border-none select-none"
