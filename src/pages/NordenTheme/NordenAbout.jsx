@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function NordenCleanUI() {
   return (
-    <div className="min-h-[80vh] bg-[#F9F9F9] rounded-md text-neutral-900 font-sans p-6 md:p-12">
+    <div className="min-h-[80vh] select-none bg-[#F9F9F9] rounded-md text-neutral-900 font-sans p-6 md:p-12">
       
       {/* --- INLINE CSS --- */}
       <style dangerouslySetInnerHTML={{ __html: `
