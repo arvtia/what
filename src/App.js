@@ -4,7 +4,7 @@ import NoPage from './Components/NoPage/NoPage';
 import ComponentsPage from './Components/ComponentsPage';
 import LayoutDashboard from './Components/AiInterface/LayoutAi';
 import NewVersionPage from './pages/NewVersionPage';
-import NordenVersion, { NordenAboutMePage, NordenHomePage } from './pages/NordenVersion';
+import NordenVersion, { NordenAboutMePage, NordenHomePage, NordenWorkPage } from './pages/NordenVersion';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
               
               {/* This renders when path is "/about" */}
               <Route path="about" element={<NordenAboutMePage />} />
+              <Route path='work' element={<NordenWorkPage />} />
             </Route>
 
 

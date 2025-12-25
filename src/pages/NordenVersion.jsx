@@ -7,6 +7,7 @@ import NordenCleanUI from "./NordenTheme/NordenAbout"
 import NordenFooter from "./NordenTheme/NordenFooter"
 import NordenNavbar from "./NordenTheme/NordenNavbar"
 import NordenSocialMedia from "./NordenTheme/components/SocialMedia"
+import NordenProjectView from "./NordenTheme/components/Projects/NordenProjectView"
 
 
 
@@ -50,3 +51,9 @@ export const NordenAboutMePage =() =>{
    )
 }
 
+
+export const NordenWorkPage =() =>{
+   return(
+      <NordenProjectView />
+   )
+}
