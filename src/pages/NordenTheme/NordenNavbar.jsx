@@ -79,12 +79,14 @@ const containerRef = useRef(null);
          <div className="relative flex gap-3 z-20 bg-white items-center p-2 rounded-br-2xl shadow-sm">
             <div className="flex gap-1 items-center pl-2">
                <NavLink to={'/'}  className=" size-4 hover:bg-neutral-300 bg-black shadow-xl rounded-full transition-colors cursor-pointer" ></NavLink>
-               <SlidingBadge 
-                  heightClass="h-8" 
-                  className="rounded-lg border-none select-none"
-                  primary={<span className="text-base font-medium">Mansuri</span>}
-                  secondary={<span className="text-base font-medium">Arvaz</span>}
-               />
+               <NavLink to={'/'} >
+                  <SlidingBadge 
+                     heightClass="h-8" 
+                     className="rounded-lg border-none select-none"
+                     primary={<span className="text-base font-medium">Mansuri</span>}
+                     secondary={<span className="text-base font-medium">Arvaz</span>}
+                  />
+               </NavLink>
             </div>
             <SlidingBadge 
                heightClass="h-7" 
