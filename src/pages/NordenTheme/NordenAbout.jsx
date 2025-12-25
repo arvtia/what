@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function NordenCleanUI() {
   return (
-    <div className="min-h-[80vh] select-none bg-[#F9F9F9] rounded-md text-neutral-900 font-sans p-6 md:p-12">
+    <div className="min-h-[80vh] select-none bg-[#F9F9F9] rounded-md text-neutral-900 font-sans p-3 md:p-8">
       
       {/* --- INLINE CSS --- */}
       <style dangerouslySetInnerHTML={{ __html: `
@@ -62,7 +62,7 @@ export default function NordenCleanUI() {
             end-to-end digital solutions.
           </p>
 
-          <div className="flex gap-4 mt-10">
+          <div className="flex gap-4 mt-10 mx-auto w-full">
             <a 
                 href="tel:+917838315511" 
                 className="group relative inline-block px-4 py-2 bg-black text-white rounded-lg font-bold overflow-hidden"
