@@ -7,7 +7,7 @@ const NordenFooter = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="mt-20 relative bg-neutral-900 text-white pt-4 pb-10 px-6 md:px-12  rounded-b-xl">
+    <footer className="mt-20 relative bg-neutral-900 text-white pt-4 pb-10 px-6 md:px-12 md:rounded-t-md rounded-t-xl rounded-b-xl">
       
       {/* THE TOP "CARVED" TAB (Recruiter's Focus) */}
       <div className="absolute -top-10 left-7 bg-neutral-900 px-8 py-3 rounded-tl-3xl rounded-tr-3xl hidden md:flex items-center">
@@ -54,7 +54,7 @@ const NordenFooter = () => {
           <p>© {currentYear} Arvaz Mansuri. All rights reserved.</p>
           <div className="flex gap-4">
             <p>Designed with ❤️</p>
-            <p>Built with Next.js</p>
+            <p>Built with ReactJS</p>
           </div>
         </div>
       </div>

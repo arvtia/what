@@ -26,15 +26,15 @@ const NordenNavbar = () => {
                <div className="size-4 hover:bg-neutral-300 bg-black shadow-xl rounded-full transition-colors cursor-pointer" />
                <SlidingBadge 
                   heightClass="h-8" 
-                  className="rounded-lg border-none"
+                  className="rounded-lg border-none select-none"
                   primary={<span className="text-base font-medium">Mansuri</span>}
                   secondary={<span className="text-base font-medium">Arvaz</span>}
                />
             </div>
             <SlidingBadge 
                heightClass="h-7" 
-               className="border-none hidden md:block"
-               primary={<span className="text-xs text-green-600 font-bold">Available</span>}
+               className="border-none hidden md:block select-none"
+               primary={<span className="text-xs text-green-600 font-bold ">Available</span>}
                secondary={<span className="text-xs text-green-600 font-bold">2 Slots</span>}
             />
 
@@ -47,7 +47,7 @@ const NordenNavbar = () => {
          <div className="relative p-2 bg-white rounded-bl-2xl shadow-sm">
             <SlidingBadge 
                heightClass="h-8" 
-               className="border-none bg-transparent"
+               className="border-none bg-transparent select-none"
                primary={<span className="text-base font-medium">Menu</span>}
                secondary={<span className="text-base font-medium">Open</span>}
             />
