@@ -44,7 +44,7 @@ const NordenServices = () => {
           {SERVICES.map((service) => (
             <div 
               key={service.id} 
-              className="group relative bg-[#F9F9F9] p-3 rounded-xl rounded-tl-none  transition-shadow duration-300"
+              className="group select-none relative bg-[#F9F9F9] p-3 rounded-xl rounded-tl-none  transition-shadow duration-300"
             >
               {/* THE INVERTED TAB TITLE */}
               <div className="absolute -top-[0px] left-0 bg-white w-fit pr-6 py-2 rounded-br-2xl flex items-center shadow-sm">

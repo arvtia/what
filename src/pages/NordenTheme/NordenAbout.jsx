@@ -3,7 +3,7 @@ import SlidingBadge from "./components/SlidingBadge";
 export default function NordenCleanUI() {
   return (
     <div className="min-h-[80vh] bg-[#F9F9F9] rounded-md text-neutral-900 font-sans p-6 md:p-12">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto select-none">
         {/* --- HEADER SECTION --- */}
         <header className="flex justify-between items-start mb-24">
           <div className="flex items-center gap-4">
@@ -25,7 +25,7 @@ export default function NordenCleanUI() {
         </header>
 
         {/* --- HERO SECTION --- */}
-        <section className="">
+        <section className="select-none">
 
           <h1 className="text-4xl md:text-4xl font-semibold tracking-tight leading-[1.1] max-w-3xl">
             Your Digital Vision,<br /> 
@@ -40,7 +40,7 @@ export default function NordenCleanUI() {
 
           <div className="flex gap-4 mt-10">
             <a 
-                href="tel:+447838315511" 
+                href="tel:+917838315511" 
                 className="group relative inline-block px-4 py-2 bg-black text-white rounded-lg font-bold overflow-hidden"
               >
                 {/* The Sliding Container */}

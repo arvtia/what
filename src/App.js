@@ -1,11 +1,10 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NoPage from './Components/NoPage/NoPage';
-import MainPage from './Components/MainPage';
 import ComponentsPage from './Components/ComponentsPage';
 import LayoutDashboard from './Components/AiInterface/LayoutAi';
 import NewVersionPage from './pages/NewVersionPage';
-import NordenVersion from './pages/NordenVersion';
+import NordenVersion, { NordenAboutMePage, NordenHomePage } from './pages/NordenVersion';
 
 function App() {
   return (
@@ -13,15 +12,19 @@ function App() {
       <BrowserRouter >
           <Routes >
             <Route path='*' element={<NoPage/>} />
-            <Route path='/' element={<MainPage />} />
-            <Route path='/new' element={<NewVersionPage />} />
-            <Route path='/n' element={<NordenVersion />} />
+            <Route path="/" element={<NordenVersion />}>
+              {/* This renders when path is exactly "/" */}
+              <Route index element={<NordenHomePage />} />
+              
+              {/* This renders when path is "/about" */}
+              <Route path="about" element={<NordenAboutMePage />} />
+            </Route>
 
-          
+
+            <Route path='/new' element={<NewVersionPage />} />
             <Route path="/component" element={<ComponentsPage />}>
 
             </Route>
-            {/* <Route path='/cards' element={<CardsShowCase />} /> */}
             <Route path='/ai' element={<LayoutDashboard />} />
 
           </Routes>

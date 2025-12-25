@@ -1,5 +1,15 @@
 
+import { useEffect, useRef, useState } from 'react';
 import SlidingBadge from './components/SlidingBadge'
+import {Link} from "react-router-dom"
+
+const RoutesNavbar = [
+   {  link : "/work", name:'Work'},
+   {  link: '/about', name: 'About'},
+   {  link: '/blog' , name: 'Blog'},
+   {  link: '/contact', name: 'Contact'}
+]
+
 
 // The SVG Corner Component
 export const InvertedCorner = ({ className }) => (
@@ -17,11 +27,58 @@ export const InvertedCorner = ({ className }) => (
 );
 
 const NordenNavbar = () => {
+
+   const [isActive, setIsActive] = useState(false)
+
+const containerRef = useRef(null);
+
+   useEffect(() => {
+    const handleClickOutside = (event) => {
+      // If clicking outside, force close
+      if (containerRef.current && !containerRef.current.contains(event.target)) {
+        setIsActive(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // This function handles the "toggle" when clicking the div itself
+  const handleToggle = (e) => {
+    // Optional: stopPropagation prevents the event from bubbling up to parents
+    // though our logic above handles outside clicks specifically.
+    setIsActive((prev) => !prev);
+  };
+
+
    return (
-      <div className="max-w-xl w-full bg-[#F9F9F9] flex justify-between items-start">
+      <div className="max-w-xl relative w-full bg-[#F9F9F9] flex justify-between items-start">
+         {/* dropdown menu */}
+         {
+            isActive && (
+               
+               <div ref={containerRef} className="absolute rounded-b-2xl inset-0 bg-black z-10 ">
+                  <div className="pt-14 rounded-b-2xl relative bg-black overflow-hidden p-2 ">
+                     <div className="w-full select-none grid grid-cols-2 gap-2">
+                        {
+                           RoutesNavbar.map((i, idx)=>(
+                              <>
+                                 <div className=" py-2 px-2 bg-neutral-800 hover:bg-neutral-700 rounded-lg text-center" key={idx}>
+                                    <Link to={i.link} className='font-semibold text-white text-center'>{i.name}</Link>
+                                 </div>
+                              </>
+                           ))
+                        }
+                     </div>
+                  </div>
+               </div>
+               
+            )
+         }
          
          {/* LEFT BLOCK */}
-         <div className="relative flex gap-3 bg-white items-center p-2 rounded-br-2xl shadow-sm">
+         <div className="relative flex gap-3 z-20 bg-white items-center p-2 rounded-br-2xl shadow-sm">
             <div className="flex gap-1 items-center pl-2">
                <div className="size-4 hover:bg-neutral-300 bg-black shadow-xl rounded-full transition-colors cursor-pointer" />
                <SlidingBadge 
@@ -44,7 +101,7 @@ const NordenNavbar = () => {
          </div>
 
          {/* RIGHT BLOCK */}
-         <div className="relative p-2 bg-white rounded-bl-2xl shadow-sm">
+         <div ref={containerRef} onClick={handleToggle} className="relative p-2 z-20 bg-white rounded-bl-2xl shadow-sm">
             <SlidingBadge 
                heightClass="h-8" 
                className="border-none bg-transparent select-none"

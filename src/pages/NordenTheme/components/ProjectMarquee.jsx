@@ -63,12 +63,12 @@ const NordenProjectMarquee = () => {
                   /* 3. Change group-hover to group-hover/card */
                   className="w-full absolute top-16 left-16 h-full object-cover grayscale 
                               transition-all duration-500 rounded-md ring-1 ring-neutral-300 shadow-2xl
-                              group-hover/card:top-8 group-hover/card:left-8 group-hover/card:grayscale-0"
+                              group-hover/card:top-8 group-hover/card:ease-in-out group-hover/card:left-8 group-hover/card:grayscale-0"
                />
                </div>
                
                {/* 4. You can also make text appear only for the hovered card */}
-               <div className="absolute top-1/3 left-1/3 opacity-0 group-hover/card:opacity-100 group-hover:bg-white transition-opacity">
+               <div className="group absolute top-1/2 left-1/3 opacity-0 group-hover/card:opacity-100 group-hover:bg-white transition-opacity">
                   <h3 className="text-white font-bold bg-black/50 px-2 py-1 rounded">View Project</h3>
                </div>
             </a>
