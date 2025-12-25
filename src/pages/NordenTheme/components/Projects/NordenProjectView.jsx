@@ -6,7 +6,6 @@ const NordenProjectView = () => {
             <p className="text-4xl mb-1 font-light ">Work</p>
             <p className="text-neutral-600">Showcasing my latest projects crafted <br/> with creativity and precision.</p>
          </div>
-
       </div>
    )
 }

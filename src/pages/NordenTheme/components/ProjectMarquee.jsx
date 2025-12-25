@@ -1,30 +1,165 @@
 import { InvertedCorner } from "../NordenNavbar";
 import SlidingBadge from "./SlidingBadge";
 
-const PROJECTS = [
+ export const PROJECTS = [
   {
     title: "Gift Hampers",
     type: "E-commerce Business",
     image: "https://i.ibb.co/tMxDT5wF/Gift-Hampers.png",
-    link: "https://blog-three-kohl-26.vercel.app/category"
+    images: [
+      "https://i.ibb.co/tMxDT5wF/Gift-Hampers.png",
+      "", // add URL
+      "", // add URL
+      ""  // add URL
+    ],
+    link: "", // add final URL
+    intro:
+      "A family-run gifting venture built on Next.js, designed to showcase curated hampers with polished, minimal UI and smooth interactions. The goal was to make selection and checkout feel delightful while keeping operations simple for a small business.",
+    problem:
+      "Traditional small gifting businesses struggle with online presentation, order accuracy, and scalable catalog management without expensive platforms. Customers also need clarity and trust at checkout.",
+    solution:
+      "Built a Next.js App Router application with a clean catalog, variant-aware product pages, and an admin panel for managing products, categories, orders, and statuses. Integrated Razorpay for secure payments, Cloudinary for media, and role-based auth for safe operations.",
+    outcomes: [
+      "Reduced catalog management time via admin CRUD and bulk operations",
+      "Higher conversion with clean product detail pages and trust cues",
+      "Operational visibility through order codes, statuses, and basic tracking"
+    ],
+    highlights: [
+      "Apple‑style polish with Tailwind and Framer Motion",
+      "Secure JWT auth and admin permissions",
+      "Razorpay integration with server-verified payment intents"
+    ],
+    stack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "MongoDB Atlas",
+      "Cloudinary",
+      "Razorpay",
+      "Node.js",
+      "Express.js"
+    ],
+    role: "Product architect, full‑stack developer, and UI/UX designer",
+    status: "Ongoing"
   },
   {
     title: "Dropitall.in",
     type: "Cloud Storage",
     image: "https://i.ibb.co/MxgyW6bd/dropitall.png",
-    link: "https://dropitall.in"
+    images: [
+      "https://i.ibb.co/MxgyW6bd/dropitall.png",
+      "", // add URL
+      "", // add URL
+      ""  // add URL
+    ],
+    link: "", // add final URL
+    intro:
+      "A cross‑platform, minimal file sharing and storage solution focused on speed, clarity, and friction‑less transfers.",
+    problem:
+      "Users need a fast, clean way to share files without bloated interfaces, confusing flows, or privacy doubts.",
+    solution:
+      "Designed a lean, secure flow with JWT auth, clear upload limits, and instant link sharing. Prioritized single-responsibility components, strong typing, and predictable state. Built backend with clean route separation, robust middleware, and analytics‑ready schemas.",
+    outcomes: [
+      "Consistently fast uploads and reliable sharing with concise UX",
+      "Lower support overhead thanks to obvious UI and predictable flows",
+      "Maintainable codebase with scalable API design and clear permission separation"
+    ],
+    highlights: [
+      "Type‑safe state management (Zustand/Redux Toolkit)",
+      "Polished UI patterns and smooth transitions",
+      "Secure API design with reusable middleware"
+    ],
+    stack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Zustand/Redux Toolkit",
+      "Node.js",
+      "Express.js",
+      "MongoDB Atlas"
+    ],
+    role: "Full‑stack developer and systems designer",
+    status: "Active development"
   },
   {
     title: "Couple's Connect",
     type: "Calendar & Memory Sharing",
     image: "https://i.ibb.co/RThngqHD/coupleconnect.png",
-    link: "https://landing-page-theta-ten-17.vercel.app/"
+    images: [
+      "https://i.ibb.co/RThngqHD/coupleconnect.png",
+      "", // add URL
+      "", // add URL
+      ""  // add URL
+    ],
+    link: "", // add final URL
+    intro:
+      "A playful, private space for couples to plan, journal memories, and celebrate moments together.",
+    problem:
+      "Most shared apps feel noisy or transactional. Couples need a calm, intimate tool that makes planning and remembering easy and delightful.",
+    solution:
+      "Built a minimalist calendar, shared notes, and memory timelines with subtle animations and privacy‑first architecture. Focused on intuitive interactions, clean typography, and low cognitive load.",
+    outcomes: [
+      "Higher engagement via simple, joyful interactions",
+      "Trust through privacy‑first design and clear boundaries",
+      "Foundational feature set ready for incremental growth (reminders, media)"
+    ],
+    highlights: [
+      "Elegant UI micro‑interactions",
+      "Clear information hierarchy and compact layouts",
+      "Scalable schema for events, notes, and shared media"
+    ],
+    stack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Node.js",
+      "MongoDB Atlas"
+    ],
+    role: "Product designer and front‑end engineer",
+    status: "Prototype live"
   },
   {
     title: "Gen Blue Ecomm",
     type: "Fast E-commerce",
     image: "https://i.ibb.co/tMHKmT7D/ecomm.png",
-    link: "https://gen-blue.vercel.app/"
+    images: [
+      "https://i.ibb.co/tMHKmT7D/ecomm.png",
+      "", // add URL
+      "", // add URL
+      ""  // add URL
+    ],
+    link: "", // add final URL
+    intro:
+      "A performance‑focused e‑commerce experience with dynamic product presentation and a near‑instant, intuitive admin panel.",
+    problem:
+      "Small teams need e‑comm speed and polish without enterprise complexity—especially around order handling, API reliability, and UI clarity.",
+    solution:
+      "Implemented App Router APIs with strict typing and robust error handling. Built hover popovers, animated sliders, and compact order tables. Hardened backend with clean route signatures, ObjectId validation, and predictable responses.",
+    outcomes: [
+      "Snappy browsing and smoother conversions",
+      "Resilient order management with safer updates and bulk operations",
+      "Cleaner developer workflow via single‑responsibility components and typed API contracts"
+    ],
+    highlights: [
+      "Admin CRUD with bulk update routes",
+      "Strong error handling and validation",
+      "Delightful UI interactions (tooltips, sliders, transitions)"
+    ],
+    stack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS/Bootstrap",
+      "Framer Motion",
+      "Redux Toolkit",
+      "Node.js",
+      "Express.js",
+      "MongoDB Atlas",
+      "Razorpay"
+    ],
+    role: "Full‑stack engineer and UI perfectionist",
+    status: "Live and evolving"
   }
 ];
 
