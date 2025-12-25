@@ -1,4 +1,5 @@
 import  { useState, useEffect } from 'react';
+import { InvertedCorner } from '../NordenNavbar';
 
 const REVIEWS = [
   {
@@ -24,6 +25,21 @@ const REVIEWS = [
   }
 ];
 
+export const StarsIconSvg = ({ className = "text-yellow-400" }) => {
+   return (
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="20" 
+        height="20" 
+        fill="currentColor" // Using currentColor lets Tailwind 'text-' classes work
+        viewBox="0 0 256 256"
+        className={className}
+      >
+        <path d="M229.5,113,166.06,89.94,143,26.5a16,16,0,0,0-30,0L89.94,89.94,26.5,113a16,16,0,0,0,0,30l63.44,23.07L113,229.5a16,16,0,0,0,30,0l23.07-63.44L229.5,143a16,16,0,0,0,0-30ZM157.08,152.3a8,8,0,0,0-4.78,4.78L128,223.9l-24.3-66.82a8,8,0,0,0-4.78-4.78L32.1,128l66.82-24.3a8,8,0,0,0,4.78-4.78L128,32.1l24.3,66.82a8,8,0,0,0,4.78,4.78L223.9,128Z"></path>
+      </svg>
+   );
+};
+
 const NordenRating = () => {
    const [index, setIndex] = useState(0);
 
@@ -37,10 +53,20 @@ const NordenRating = () => {
    const current = REVIEWS[index];
 
    return (
-         <div className="mb-3 bg-[#F9F9F9] mt-3 border-neutral-100 p-8 rounded-md min-h-[220px] flex items-center justify-center transition-all duration-500">
-            {/* Container with a key for smooth re-mount animations if using Framer Motion, 
+         <div className="mb-3  bg-stripes-light mt-3 border-neutral-100 p-8 rounded-md min-h-[220px] flex items-center justify-center transition-all duration-500 relative">
+            <div className="absolute top-0 left-0">
+               <div className="relative bg-white shadow-sm px-4 py-2  rounded-br-2xl">
+                  <div className="text-lg">
+                     Testimonies
+                  </div>
+                  <InvertedCorner className="absolute left-0 rotate-180 top-11 text-white"/>
+                  <InvertedCorner className="absolute -right-6  rotate-180 -top-0 text-white"/>
+               </div>
+            </div>
+            
+            {/* Container with a key for smooth re-mount animations if using Framer Motion,
                otherwise standard CSS transitions work too */}
-            <div key={current.id} className="w-full max-w-2xl animate-in fade-in slide-in-from-bottom-2 duration-700">
+            <div key={current.id} className="w-full pt-8 max-w-2xl animate-in  fade-in slide-in-from-bottom-2 duration-700">
             
             <p className="text-md md:text-lg  text-neutral-800 leading-snug">
                "{current.text}"

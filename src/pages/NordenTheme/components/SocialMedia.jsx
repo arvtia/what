@@ -35,7 +35,7 @@ const SocialMediaArray =[
 
 const NordenSocialMedia = () => {
    return (
-      <div className="relative  max-w-xl mx-auto w-full mt-3 py-3 rounded-md bg-[#F9F9F9]">
+      <div className="relative  max-w-xl mx-auto w-full mt-3 py-3 rounded-md bg-[#F9F9F9] bg-stripes-light">
          <div className="absolute top-0 left-0">
             <div className="relative bg-white shadow-sm px-4 py-2 rounded-br-2xl">
                <p className="text-lg">Find me</p>
