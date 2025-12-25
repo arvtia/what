@@ -4,6 +4,7 @@ import SlidingBadge from "./SlidingBadge";
  export const PROJECTS = [
   { 
     id: 1,
+    year: 2025,
     title: "Gift Hampers",
     type: "E-commerce Business",
     image: "https://i.ibb.co/tMxDT5wF/Gift-Hampers.png",
@@ -47,6 +48,7 @@ import SlidingBadge from "./SlidingBadge";
   },
   {
     id: 2,
+    year: 2025,
     title: "Dropitall.in",
     type: "Cloud Storage",
     image: "https://i.ibb.co/MxgyW6bd/dropitall.png",
@@ -87,6 +89,7 @@ import SlidingBadge from "./SlidingBadge";
   },
   {
     id:3,
+    year: 2025,
     title: "Couple's Connect",
     type: "Calendar & Memory Sharing",
     image: "https://i.ibb.co/RThngqHD/coupleconnect.png",
@@ -126,6 +129,7 @@ import SlidingBadge from "./SlidingBadge";
   },
   {
     id:4,
+    year: 2025,
     title: "Gen Blue Ecomm",
     type: "Fast E-commerce",
     image: "https://i.ibb.co/tMHKmT7D/ecomm.png",

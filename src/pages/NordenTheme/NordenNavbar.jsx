@@ -64,9 +64,9 @@ const containerRef = useRef(null);
                         {
                            RoutesNavbar.map((i, idx)=>(
                               <>
-                                 <div className=" py-2 px-2 bg-neutral-800 hover:bg-neutral-700 rounded-lg text-center" key={idx}>
-                                    <Link to={i.link} className='font-semibold text-white text-center'>{i.name}</Link>
-                                 </div>
+                                 <NavLink to={i.link} className=" py-2 px-2 bg-neutral-800 hover:bg-neutral-700 rounded-lg text-center" key={idx}>
+                                    <p className='font-semibold text-white text-center'>{i.name}</p>
+                                 </NavLink>
                               </>
                            ))
                         }

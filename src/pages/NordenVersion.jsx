@@ -40,6 +40,7 @@ export const NordenHomePage =() =>{
          <NordenRating />
          <NordenProjectMarquee />
          <NordenServices />
+         <NordenSocialMedia />
       </>
    )
 }

@@ -2,49 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { PROJECTS } from '../ProjectMarquee';
 import SlidingBadge from '../SlidingBadge';
 import { useState } from 'react';
-
-// {
-//     id:4,
-//     title: "Gen Blue Ecomm",
-//     type: "Fast E-commerce",
-//     image: "https://i.ibb.co/tMHKmT7D/ecomm.png",
-//     images: [
-//       "https://i.ibb.co/tMHKmT7D/ecomm.png",
-//       "", // add URL
-//       "", // add URL
-//       ""  // add URL
-//     ],
-//     link: "", // add final URL
-//     intro:
-//       "A performance‑focused e‑commerce experience with dynamic product presentation and a near‑instant, intuitive admin panel.",
-//     problem:
-//       "Small teams need e‑comm speed and polish without enterprise complexity—especially around order handling, API reliability, and UI clarity.",
-//     solution:
-//       "Implemented App Router APIs with strict typing and robust error handling. Built hover popovers, animated sliders, and compact order tables. Hardened backend with clean route signatures, ObjectId validation, and predictable responses.",
-//     outcomes: [
-//       "Snappy browsing and smoother conversions",
-//       "Resilient order management with safer updates and bulk operations",
-//       "Cleaner developer workflow via single‑responsibility components and typed API contracts"
-//     ],
-//     highlights: [
-//       "Admin CRUD with bulk update routes",
-//       "Strong error handling and validation",
-//       "Delightful UI interactions (tooltips, sliders, transitions)"
-//     ],
-//     stack: [
-//       "Next.js",
-//       "React",
-//       "Tailwind CSS/Bootstrap",
-//       "Framer Motion",
-//       "Redux Toolkit",
-//       "Node.js",
-//       "Express.js",
-//       "MongoDB Atlas",
-//       "Razorpay"
-//     ],
-//     role: "Full‑stack engineer and UI perfectionist",
-//     status: "Live and evolving"
-//   }
+import { InvertedCorner } from '../../NordenNavbar';
 
 export const BackArrowIcon = () =>{
    return(
@@ -60,19 +18,18 @@ export const HeaderPageProject = ({project}) =>{
             
             <div className="p-3 space-y-3">
                <p className='text-3xl font-light'>{project.title}</p>
+               <p className='px-3 text-sm rounded-full bg-green-200 pb-1 w-fit text-green-700'>{project.status}</p>
                <p className='text-neutral-700'>{project.intro}</p>
                <div className="relative pt-5 w-fit">
                   <div className="p-2 rounded-md bg-stripes">
                      <a className='px-3 py-2 text-lg flex gap-3 items-center rounded-md bg-black text-white ' href={project.link}>
                         Preview Website 
-
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 256 256"><path d="M198.63,57.37a32,32,0,0,0-45.19-.06L141.79,69.52a8,8,0,0,1-11.58-11l11.72-12.29a1.59,1.59,0,0,1,.13-.13,48,48,0,0,1,67.88,67.88,1.59,1.59,0,0,1-.13.13l-12.29,11.72a8,8,0,0,1-11-11.58l12.21-11.65A32,32,0,0,0,198.63,57.37ZM114.21,186.48l-11.65,12.21a32,32,0,0,1-45.25-45.25l12.21-11.65a8,8,0,0,0-11-11.58L46.19,141.93a1.59,1.59,0,0,0-.13.13,48,48,0,0,0,67.88,67.88,1.59,1.59,0,0,0,.13-.13l11.72-12.29a8,8,0,1,0-11.58-11ZM216,152H192a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16ZM40,104H64a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16Zm120,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V192A8,8,0,0,0,160,184ZM96,72a8,8,0,0,0,8-8V40a8,8,0,0,0-16,0V64A8,8,0,0,0,96,72Z"></path></svg>
                      </a>
                   </div>
                </div>
             </div>
-         </div>
-         
+         </div>    
       </>
    )
 }
@@ -80,7 +37,7 @@ const ProductImageBio =({project})=>{
    return(
       <>
          <div className="max-w-xl w-full bg-[#F9F9F9] rounded-md mb-3 overflow-hidden">
-            <div className="h-72 w-full bg-stripes-light p-10">
+            <div className="h-fit md:h-72 w-full bg-stripes-light p-4 md:p-10">
                <img src={project.image} alt={project.id} className='shadow-xl rounded-md p-1 bg-white ring-1 ring-neutral-300'/>
             </div>
          </div>
@@ -106,7 +63,7 @@ const ProductImagesGallery = ({ project }) => {
                      key={idx} 
                      className="w-full bg-[#F9F9F9] rounded-2xl mb-3"
                   >
-                     <div className="relative h-72 w-full rounded-xl p-10 bg-stripes overflow-hidden">
+                     <div className="relative h-fit md:h-72 w-full rounded-xl p-2 md:p-10 bg-stripes overflow-hidden">
                         <img 
                            src={src} 
                            alt={`${project.title} interface ${idx + 1}`} 
@@ -148,8 +105,129 @@ const ProductImagesGallery = ({ project }) => {
       </div>
    );
 };
+const ProductDescription =({project})=>{
+   return(
+      <>
+         <div className="max-w-xl relative w-full bg-[#F9F9F9] rounded-md h-fit mb-3 p-3">
+            {/* loop */}
+            <div className="absolute left-0 top-0">
+               <div className="relative flex bg-white px-3 py-1 rounded-br-2xl shadow-sm">
+                  <p className='text-green-500 font-semibold uppercase '>Highlights</p>
+                  <InvertedCorner className="absolute -right-6 rotate-180 top-0 text-white" />
+               </div>
+               <InvertedCorner className="rotate-180 text-white"/>
+            </div>
+            <div className="p-2 mt-5">
+               <ul className='list-outside space-y-1 '>
+                  {
+                     project.highlights.map((i, idx)=>(
+                        <>
+                           <li key={idx} className='cursor-pointer text-base text-neutral-600 hover:underline hover:underline-offset-2'>
+                              {i}
+                           </li>
+                        </>
+                     ))
+                  }
+               </ul>
+            </div>
+         </div>
+      </>
+   )
+};
+const OutComes =({project})=>{
+   return(
 
+      <div className="w-full max-w-xl mx-auto p-3 relative rounded-md bg-[#F9F9F9] mb-3">
+         {/* loop */}
+         <div className="absolute left-0 top-0">
+            <div className="relative flex bg-white px-3 py-1 rounded-br-2xl shadow-sm">
+               <p className='text-red-500 font-semibold uppercase '>Problem</p>
+               <InvertedCorner className="absolute -right-6 rotate-180 top-0 text-white" />
+            </div>
+            <InvertedCorner className="rotate-180 text-white"/>
+         </div>
+         <div className="pt-8">
+            {
+               project ? (
+                  <p>{project.problem}</p>
+               ) : (
+                  <>No Questions</>
+               )
+            }
+         </div>
+      </div>
+   )
+}
+const SolutionComes =({project})=>{
+   return(
 
+      <div className="w-full max-w-xl mx-auto p-3 relative rounded-md bg-[#F9F9F9] mb-3">
+         {/* loop */}
+         <div className="absolute left-0 top-0">
+            <div className="relative flex bg-white px-3 py-1 rounded-br-2xl shadow-sm">
+               <p className='text-green-500 font-semibold uppercase '>How i Solved it</p>
+               <InvertedCorner className="absolute -right-6 rotate-180 top-0 text-white" />
+            </div>
+            <InvertedCorner className="rotate-180 text-white"/>
+         </div>
+         <div className="pt-8">
+            {
+               project ? (
+                  <p>{project.problem}</p>
+               ) : (
+                  <>No Questions</>
+               )
+            }
+         </div>
+      </div>
+   )
+}
+const TechStacks =({project})=>{
+   return(
+
+      <div className="w-full max-w-xl mx-auto p-3 relative rounded-b-md bg-[#F9F9F9] mb-3 mt-5">
+         {/* loop */}
+         <div className="absolute left-0 top-0">
+            <div className="relative flex bg-white px-3 py-1 rounded-br-2xl shadow-sm">
+               <p className='text-green-500 font-semibold uppercase'>Tech Stacks </p>
+               <InvertedCorner className="absolute -right-6 rotate-180 top-0 text-white" />
+            </div>
+            <InvertedCorner className="rotate-180 text-white"/>
+         </div>
+         <div className="pt-8">
+            <ul className='flex flex-wrap gap-3'>
+               {
+                  project.stack.map((i, idx)=>(
+                     <li className='text-base px-2 py-1 rounded-md hover:bg-neutral-200 bg-neutral-100' key={idx}>{i}</li>
+                  ))
+               }
+            </ul>
+         </div>
+      </div>
+   )
+}
+const Role =({project}) =>{
+   return(
+      <div className="max-w-7xl w-full p-3 relative h-fit mb-3 bg-[#F9F9F9] rounded-b-md">
+         <div className="absolute left-0 top-0">
+            <div className="relative flex bg-white px-3 py-1 rounded-br-2xl shadow-sm">
+               <p className='text-green-500 font-semibold uppercase '>Role</p>
+               <InvertedCorner className="absolute -right-6 rotate-180 top-0 text-white" />
+            </div>
+            <InvertedCorner className="rotate-180 text-white"/>
+         </div>
+         <div className="w-full pt-8">
+            {
+               project ? (
+                  <p>{project.role}</p>
+               ):(
+                  <p>Not specific</p>
+               )
+            }
+         </div>
+      </div>
+   )
+}
 const NordenProjectDetails = () => {
   const { projectId } = useParams(); // Grabs '1', '2', etc. from the URL
   const navigate = useNavigate();
@@ -161,21 +239,23 @@ const NordenProjectDetails = () => {
   return (
    <>
       <HeaderPageProject project = {project}/>
-      
+      <Role project={project}/>
       <ProductImageBio project={project}/>
+      <OutComes project={project} />
 
+      <SolutionComes project={project}/>
+      <ProductDescription project={project} />
       <ProductImagesGallery project={project} />
-      <div className="max-w-xl w-full bg-[#F9F9F9] rounded-md p-3">
-         
-      </div>
-
+      <TechStacks project={project} />
    </>
   );
 };
 
+export default NordenProjectDetails;
 
 
 
 
 
-export default NordenProjectDetails; 
+
+
