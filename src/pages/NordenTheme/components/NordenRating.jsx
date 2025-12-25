@@ -6,21 +6,21 @@ const REVIEWS = [
     text: "Outstanding creativity & professional service from Elias. He transformed our vision into a high-converting product.",
     name: "Sarah Jenkins",
     role: "CEO at TechFlow",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
+    avatar: "https://i.ibb.co/wVkwJsg/cf6ec445df41899479978aa16f05c996.jpg"
   },
   {
     id: 2,
     text: "The performance optimization Elias implemented slashed our load times by 40%. A true technical expert.",
     name: "Marcus Chen",
     role: "CTO at Nexus SaaS",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus"
+    avatar: "https://i.ibb.co/dw8J088M/e63a1274d16ece550d0886e481cad659.jpg"
   },
   {
     id: 3,
     text: "Elias doesn't just code; he understands product-market fit. His UI decisions are backed by deep UX research.",
     name: "Elena Rodriguez",
     role: "Product Manager at CreativeCo",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Elena"
+    avatar: "https://i.ibb.co/WN3WfjSr/d6bc8d404b8a79fbb3f6c2ad53fbc2dd.jpg"
   }
 ];
 
