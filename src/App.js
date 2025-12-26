@@ -6,6 +6,7 @@ import LayoutDashboard from './Components/AiInterface/LayoutAi';
 import NewVersionPage from './pages/NewVersionPage';
 import NordenVersion, { NordenAboutMePage, NordenHomePage, NordenProjectPage, NordenWorkPage, NorderLetsTalkPage } from './pages/NordenVersion';
 import { Divide } from 'phosphor-react';
+import NordenBlogMain from './pages/NordenTheme/components/blogs/NordenBlogMain';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
               <Route path="about" element={<NordenAboutMePage />} />
               <Route path='work' element={<NordenWorkPage />} />
               <Route path='work/:projectId' element={ <NordenProjectPage />} />
-              <Route path='/contact' element={<NorderLetsTalkPage />} />
+              <Route path='contact' element={<NorderLetsTalkPage />} />
+              <Route path='blog' element={<NordenBlogMain />} />
             </Route>
 
 
