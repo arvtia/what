@@ -4,7 +4,7 @@ export default function NordenCleanUI() {
   return (
     <div className="min-h-[80vh] select-none bg-[#F9F9F9] rounded-md text-neutral-900 font-sans p-3 md:p-8">
       
-      {/* --- INLINE CSS --- */}
+      {/* --- Inline CSS --- */}
       <style dangerouslySetInnerHTML={{ __html: `
         @keyframes handshake {
           0% { transform: rotate(0deg); }
@@ -48,7 +48,7 @@ export default function NordenCleanUI() {
         <section className="select-none">
           {/* Added 'hand-trigger' class here to make the whole title trigger the shake */}
           <h1 className="hand-trigger text-4xl md:text-4xl font-semibold tracking-tight leading-[1.1] max-w-3xl cursor-default">
-            Your Digital Vision,<br /> 
+            Your Digital Vision,<br />
             <div className="flex gap-3 items-center flex-wrap">
               <span className="text-neutral-400">Perfectly Realized.</span>
               <span className="animate-handshake text-2xl">🖐️</span>
@@ -56,7 +56,7 @@ export default function NordenCleanUI() {
           </h1>
 
           <p className="mt-8 text-lg md:text-xl text-neutral-500 max-w-2xl leading-relaxed">
-            I build <span className="text-neutral-900 font-medium hover:bg-orange-100 hover:px-2 hover:font-mono transition-all duration-300 delay-150 rounded-full ">high-performance, scalable web applications</span> where 
+            I build <span className="text-neutral-900 font-medium hover:bg-orange-100 hover:px-2 transition-all duration-300 delay-150 rounded-full ">high-performance, scalable web applications</span> where 
             form meets function. From architecting robust backends to crafting 
             <span className="text-neutral-900 font-medium"> pixel-perfect user interfaces</span>, I deliver 
             end-to-end digital solutions.

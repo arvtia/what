@@ -101,7 +101,6 @@ export const sendMessageToMockGPT = async (userMessage) => {
 
     let reply = response.choices[0].message.content;
 
-    // If mock API keeps returning same thing, randomize it
     if (reply.includes("mock") || reply.length < 10) {
       reply = dummyReplies[Math.floor(Math.random() * dummyReplies.length)];
     }

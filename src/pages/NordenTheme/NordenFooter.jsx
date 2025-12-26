@@ -53,7 +53,7 @@ const NordenFooter = () => {
         <div className="mt-20 pt-8 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center gap-4 text-neutral-500 text-sm">
           <p>© {currentYear} Arvaz Mansuri. All rights reserved.</p>
           <div className="flex gap-4">
-            <p>Designed with ❤️</p>
+            <p>Designed inspired by Norden Templates</p>
             <p>Built with ReactJS</p>
           </div>
         </div>
