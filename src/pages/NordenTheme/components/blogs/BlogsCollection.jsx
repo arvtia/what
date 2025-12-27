@@ -10,14 +10,23 @@ export const BlogsCollection= () =>{
             {
                blog.map((i, idx)=>(
                   <>
-                     <Link to={`/blog/${i.id}`} className="flex p-2 rounded-2xl group bg-[#F9F9F9] hover:ring-1 hover:ring-neutral-300 transition-transform duration-150" key={idx}>
-                        <div className="bg-[#F9F9F9] overflow-hidden rounded-xl h-16 w-16">
-                           <img src={i.image} alt={i.slug} className="scale-125 aspect-square object-cover group-hover:scale-150 transition-transform duration-300" />
+                     <Link to={`/blog/${i.id}`} className="flex p-2 rounded-2xl group bg-stripes transition-transform duration-150 relative overflow-hidden" key={idx}>
+                        <div className="w-full bg-[#F9F9F9] overflow-hidden rounded-xl">
+                           <img 
+                              src={i.image} 
+                              alt={i.slug} 
+                              className="scale-125 aspect-square object-cover group-hover:scale-110 transition-transform duration-500" 
+                           />
                         </div>
-                        <div className="flex-1 pl-3">
-                           <div className="items-stret flex flex-col truncate">
+                        <div className="absolute inset-0 p-4 flex flex-col justify-end">
+                           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
+                           <div className="relative z-10 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                              <h3 className="font-semibold text-lg leading-tight truncate">
                               {i.title}
-                              <div className="text-sm">{i.date}</div>
+                              </h3>
+                              <div className="text-xs text-neutral-300 mt-1">
+                              {i.date}
+                              </div>
                            </div>
                         </div>
                      </Link>

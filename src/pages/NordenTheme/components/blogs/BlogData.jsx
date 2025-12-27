@@ -2,7 +2,7 @@
 export const BLOGS = [
   {   
       id: 1,
-      image:"https://i.ibb.co/XrRCgW6X/5f5ffaf8-036f-4946-bf18-54ba13d16855.webp",
+      image:"/assets/images/bg-1.jpg",
       title: "Why Side Projects Shape Better Developers",
       slug: "side-projects-shape-developers",
       date: "2025-12-27",
@@ -52,6 +52,6 @@ export const BLOGS = [
       title: "",
       slug: "",
       date: "",
-      image:"https://i.ibb.co/Vc9rKfq0/0d2f3af68c788199af681152e1a43ad9.jpg"
+      image:"/assets/images/bg-2.jpg"
    }
 ];
