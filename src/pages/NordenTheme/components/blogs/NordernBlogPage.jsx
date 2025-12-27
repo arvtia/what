@@ -6,13 +6,13 @@ const NordernBlogPage = () => {
   const { blogId } = useParams();
   const blog = BLOGS.find((p) => p.id === parseInt(blogId));
 
-  if (!blog) return <div className="p-20 text-center">Blog post not found</div>;
+  if (!blog) return <div className="p-20 text-center bg-[#F9F9F9]">Blog post not found</div>;
 
   return (
     <motion.div 
       initial={{ opacity: 0, y: 10 }} 
       animate={{ opacity: 1, y: 0 }}
-      className="max-w-xl mx-auto pb-20 px-3"
+      className="max-w-xl mx-auto pb-20 px-3 bg-[#F9F9F9]"
     >
       {/* Header Section */}
       <header className="pt-20">
