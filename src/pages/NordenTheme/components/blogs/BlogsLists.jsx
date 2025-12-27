@@ -1,7 +1,18 @@
 
+
+
 const BlogsLists = () => {
    return (
-      <div className="
+      <>
+         <div className="bg-[#F9F9F9] p-3 pt-20">
+            <div className="p-5 md:px-10">
+               <div className="text-4xl font-light text-black">
+                  Blogs
+               </div>
+               <p>Sharing my own thoughts</p>
+            </div>
+         </div>
+         <div className="
          max-w-xl
          mx-auto
          rounded-md
@@ -15,15 +26,11 @@ const BlogsLists = () => {
          border-none
          ">
          <div className="pt-20 z-20 text-black text-4xl pb-20 md:px-10 font-medium">
-            <p className="mb-2">Blogs</p>
-            <p className="text-lg leading-5 text-neutral-500 font-normal">
-               lets read about what have ignited the curious guy inside me !!
-            </p>
+            
          </div>
          <div className="inset-0 z-0 absolute bg-gradient-to-t from-transparent via-[#f9f9f9c0] to-[#F9F9F9]"></div>
-
-
       </div>
+      </>
    )
 }
 

@@ -7,6 +7,7 @@ import NewVersionPage from './pages/NewVersionPage';
 import NordenVersion, { NordenAboutMePage, NordenHomePage, NordenProjectPage, NordenWorkPage, NorderLetsTalkPage } from './pages/NordenVersion';
 import { Divide } from 'phosphor-react';
 import NordenBlogMain from './pages/NordenTheme/components/blogs/NordenBlogMain';
+import NordernBlogPage from './pages/NordenTheme/components/blogs/NordernBlogPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <Route path='work/:projectId' element={ <NordenProjectPage />} />
               <Route path='contact' element={<NorderLetsTalkPage />} />
               <Route path='blog' element={<NordenBlogMain />} />
+              <Route path='blog/:blogId' element={<NordernBlogPage />} />
             </Route>
 
 
