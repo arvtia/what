@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 export default function NordenCleanUI() {
   return (
     <div className="min-h-[80vh] select-none bg-[#F9F9F9] rounded-md text-neutral-900 font-sans p-3 md:p-8">
-      
       {/* --- Inline CSS --- */}
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         @keyframes handshake {
           0% { transform: rotate(0deg); }
           20% { transform: rotate(-15deg); }
@@ -24,22 +25,28 @@ export default function NordenCleanUI() {
         .hand-trigger:hover .animate-handshake {
           animation: handshake 0.6s ease-in-out infinite;
         }
-      `}} />
+      `,
+        }}
+      />
 
       <div className="max-w-5xl mx-auto select-none">
         {/* --- HEADER SECTION --- */}
         <header className="flex justify-between items-start mb-24">
           <div className="flex items-center gap-4">
             <div className="relative size-14 rounded-full overflow-hidden bg-neutral-200 border border-neutral-100">
-               <img 
-                src="https://i.ibb.co/JR8TxJbX/IMG20250305095541.jpg" 
-                alt="Profile" 
+              <img
+                src="https://i.ibb.co/JR8TxJbX/IMG20250305095541.jpg"
+                alt="Profile"
                 className="object-cover w-full h-full"
-               />
+              />
             </div>
             <div>
-              <p className="text-[20px] font-bold leading-none">Arvaz Mansuri</p>
-              <p className="text-neutral-500 text-sm mt-1">Full Stack developer</p>
+              <p className="text-[20px] font-bold leading-none">
+                Arvaz Mansuri
+              </p>
+              <p className="text-neutral-500 text-sm mt-1">
+                Full Stack developer
+              </p>
             </div>
           </div>
         </header>
@@ -48,7 +55,8 @@ export default function NordenCleanUI() {
         <section className="select-none">
           {/* Added 'hand-trigger' class here to make the whole title trigger the shake */}
           <h1 className="hand-trigger text-4xl md:text-4xl font-semibold tracking-tight leading-[1.1] max-w-3xl cursor-default">
-            Your Digital Vision,<br />
+            Your Digital Vision,
+            <br />
             <div className="flex gap-3 items-center flex-wrap">
               <span className="text-neutral-400">Perfectly Realized.</span>
               <span className="animate-handshake text-2xl">🖐️</span>
@@ -56,51 +64,44 @@ export default function NordenCleanUI() {
           </h1>
 
           <p className="mt-8 text-lg md:text-xl text-neutral-500 max-w-2xl leading-relaxed">
-            I build <span className="text-neutral-900 font-medium hover:bg-orange-100 hover:px-2 transition-all duration-300 delay-150 rounded-full ">high-performance, scalable web applications</span> where 
-            form meets function. From architecting robust backends to crafting 
-            <span className="text-neutral-900 font-medium"> pixel-perfect user interfaces</span>, I deliver 
-            end-to-end digital solutions.
+            I build{" "}
+            <span className="text-neutral-900 font-medium hover:bg-orange-100 hover:px-2 transition-all duration-300 delay-150 rounded-full ">
+              high-performance, scalable web applications
+            </span>{" "}
+            where form meets function. From architecting robust backends to
+            crafting
+            <span className="text-neutral-900 font-medium">
+              {" "}
+              pixel-perfect user interfaces
+            </span>
+            , I deliver end-to-end digital solutions.
           </p>
 
-          <div className="flex gap-4 mt-10 mx-auto w-full">
-            <a 
-                href="tel:+917838315511" 
-                className="group relative inline-block px-4 py-2 bg-black text-white rounded-lg font-bold overflow-hidden"
-              >
-                <div className="relative h-6 overflow-hidden">
-                  <div className="transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-6">
-                    <div className="flex items-center justify-center gap-2 h-6">
-                      <span>Tap to Call</span>
-                      <span className="text-lg">→</span>
-                    </div>
-                    <div className="flex items-center justify-center gap-2 h-6 text-yellow-400">
-                      <span>Call Now</span>
-                      <span className="text-lg translate-x-1 transition-transform duration-300">→</span>
-                    </div>
+          <div className="flex gap-4 flex-wrap  mt-10 mx-auto w-full">
+            <a
+              href="tel:+917838315511"
+              className="group relative inline-block px-4 py-2 bg-black text-white rounded-lg font-bold overflow-hidden w-full md:w-fit"
+            >
+              <div className="relative h-6 overflow-hidden">
+                <div className="transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-6">
+                  <div className="flex items-center justify-center gap-2 h-6">
+                    <span>Tap to Call</span>
+                    <span className="text-lg">→</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 h-6 text-yellow-400">
+                    <span>Call Now</span>
+                    <span className="text-lg translate-x-1 transition-transform duration-300">
+                      →
+                    </span>
                   </div>
                 </div>
-              </a>
+              </div>
+            </a>
 
-              <a 
-                href="https://www.dropbox.com/scl/fi/jp6ux30aqixi8ghvyi05j/CV-ARVAZ.docx?rlkey=p2g6tic45a2sdbiw0ntwveb3t&st=2e079u93&dl=0" 
-                className="group relative inline-block px-4 py-2 bg-black text-white rounded-lg font-bold overflow-hidden"
-              >
-                <div className="relative h-6 overflow-hidden">
-                  <div className="transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-6">
-                    <div className="flex items-center justify-center gap-2 h-6">
-                      <span>CV</span>
-                      
-                    </div>
-                    <div className="flex items-center justify-center gap-2 h-6 text-yellow-400">
-                      <span>
-                        <i className="bi bi-folder2-open"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-            <Link to={'/work'} className="px-4 py-2 bg-white border border-neutral-200 text-neutral-900 rounded-lg hover:shadow-lg font-bold hover:bg-neutral-50 transition-all">
+            <Link
+              to={"/work"}
+              className="px-4 w-full md:w-fit text-center py-2 bg-white border border-neutral-200 text-neutral-900 rounded-lg hover:shadow-lg font-bold hover:bg-neutral-50 transition-all"
+            >
               View Work
             </Link>
           </div>
