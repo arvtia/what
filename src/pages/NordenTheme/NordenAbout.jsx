@@ -81,6 +81,25 @@ export default function NordenCleanUI() {
                 </div>
               </a>
 
+              <a 
+                href="https://www.dropbox.com/scl/fi/jp6ux30aqixi8ghvyi05j/CV-ARVAZ.docx?rlkey=p2g6tic45a2sdbiw0ntwveb3t&st=2e079u93&dl=0" 
+                className="group relative inline-block px-4 py-2 bg-black text-white rounded-lg font-bold overflow-hidden"
+              >
+                <div className="relative h-6 overflow-hidden">
+                  <div className="transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-6">
+                    <div className="flex items-center justify-center gap-2 h-6">
+                      <span>CV</span>
+                      
+                    </div>
+                    <div className="flex items-center justify-center gap-2 h-6 text-yellow-400">
+                      <span>
+                        <i className="bi bi-folder2-open"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
             <Link to={'/work'} className="px-4 py-2 bg-white border border-neutral-200 text-neutral-900 rounded-lg hover:shadow-lg font-bold hover:bg-neutral-50 transition-all">
               View Work
             </Link>
