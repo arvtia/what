@@ -5,7 +5,6 @@ import ComponentsPage from './Components/ComponentsPage';
 import LayoutDashboard from './Components/AiInterface/LayoutAi';
 import NewVersionPage from './pages/NewVersionPage';
 import NordenVersion, { NordenAboutMePage, NordenHomePage, NordenProjectPage, NordenWorkPage, NorderLetsTalkPage } from './pages/NordenVersion';
-import { Divide } from 'phosphor-react';
 import NordenBlogMain from './pages/NordenTheme/components/blogs/NordenBlogMain';
 import NordernBlogPage from './pages/NordenTheme/components/blogs/NordernBlogPage';
 

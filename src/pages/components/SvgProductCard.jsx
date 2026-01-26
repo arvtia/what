@@ -21,6 +21,7 @@ export default function SVGProductCard() {
          <img 
          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000" 
          className="w-full h-full object-cover"
+         alt="product"
          />
 
          {/* The Bottom Tab */}

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { SendSvgIcon } from "./svgs/Svg";
 
 const SearchBox = ({ onSend }) => {
   const [input, setInput] = useState("");

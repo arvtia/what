@@ -1,6 +1,5 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { PROJECTS } from '../ProjectMarquee';
-import SlidingBadge from '../SlidingBadge';
 import { useState } from 'react';
 import { InvertedCorner } from '../../NordenNavbar';
 
@@ -230,7 +229,7 @@ const Role =({project}) =>{
 }
 const NordenProjectDetails = () => {
   const { projectId } = useParams(); // Grabs '1', '2', etc. from the URL
-  const navigate = useNavigate();
+  
 
   // Find the project in your array based on the URL ID
   const project = PROJECTS.find(p => p.id === parseInt(projectId));

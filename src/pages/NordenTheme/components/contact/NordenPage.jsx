@@ -1,4 +1,4 @@
-import NordenSocialMedia, { LinkedinIcon, XIconSvg } from '../SocialMedia';
+import NordenSocialMedia  from '../SocialMedia';
 import './style.css'
 
 const NordenLetsTalkPage = () => {

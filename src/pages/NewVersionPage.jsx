@@ -1,5 +1,4 @@
 
-import MaskedCurvyCard from "./components/MaskedCurvy"
 import SVGProductCard from "./components/SvgProductCard"
 
 const NewVersionPage = () => {

@@ -1,5 +1,4 @@
 import { InvertedCorner } from "../NordenNavbar";
-import SlidingBadge from "./SlidingBadge";
 import {motion} from "motion/react"
 
  export const PROJECTS = [
