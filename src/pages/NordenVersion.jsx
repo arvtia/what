@@ -36,7 +36,8 @@ export const CV = () => {
     <>
       <div className="sticky bottom-2 left-2 z-50 animate-bounce">
         <a
-          href="https://www.dropbox.com/scl/fi/jp6ux30aqixi8ghvyi05j/CV-ARVAZ.docx?rlkey=p2g6tic45a2sdbiw0ntwveb3t&st=2e079u93&dl=0"
+          href="./CV-ARVAZ-2026.pdf"
+          download
           className="group relative inline-block px-4 py-2 bg-black text-white rounded-lg font-bold overflow-hidden"
         >
           <div className="relative h-6 overflow-hidden">

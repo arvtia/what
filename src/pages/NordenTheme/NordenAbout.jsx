@@ -1,8 +1,9 @@
+import { Download, FileArrowDown } from "phosphor-react";
 import { Link } from "react-router-dom";
 
 export default function NordenCleanUI() {
   return (
-    <div className="min-h-[80vh] select-none bg-[#F9F9F9] rounded-md text-neutral-900 font-sans p-3 md:p-8">
+    <div className="min-h-[40vh] select-none bg-[#F9F9F9] rounded-md text-neutral-900 font-sans p-3 md:p-8">
       {/* --- Inline CSS --- */}
       <style
         dangerouslySetInnerHTML={{
@@ -104,6 +105,15 @@ export default function NordenCleanUI() {
             >
               View Work
             </Link>
+
+            <a
+              href="/CV-ARVAZ-2026.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-white border border-neutral-200 text-neutral-900 rounded-lg hover:shadow-lg font-bold hover:bg-neutral-50 transition-all w-full md:w-fit text-center"
+            >
+              Resume
+            </a>
           </div>
         </section>
       </div>
