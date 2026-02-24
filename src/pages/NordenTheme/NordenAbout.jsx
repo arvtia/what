@@ -1,4 +1,3 @@
-import { Download, FileArrowDown } from "phosphor-react";
 import { Link } from "react-router-dom";
 
 export default function NordenCleanUI() {
