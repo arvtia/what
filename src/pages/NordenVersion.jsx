@@ -20,7 +20,7 @@ const NordenVersion = () => {
           <NordenNavbar />
           <main>
             <Outlet />
-            <CV />
+            {/* <CV /> */}
           </main>
           <NordenFooter />
         </div>
@@ -36,8 +36,7 @@ export const CV = () => {
     <>
       <div className="sticky bottom-2 left-2 z-50 animate-bounce">
         <a
-          href="./CV-ARVAZ-2026.pdf"
-          download
+          href="https://www.dropbox.com/scl/fi/s6i7qa14t7raes96rgzg1/CV-ARVAZ-2026.pdf?rlkey=t4h06bxaplwq8ee754gw5dw6c&st=4pxstdqd&dl=0"
           className="group relative inline-block px-4 py-2 bg-black text-white rounded-lg font-bold overflow-hidden"
         >
           <div className="relative h-6 overflow-hidden">
