@@ -53,13 +53,19 @@ export const PROJECTS = [
     year: 2025,
     title: "Gift Hampers",
     type: "E-commerce Business",
-    image: "https://i.ibb.co/tMxDT5wF/Gift-Hampers.png",
+    image: "https://i.ibb.co/KxkCbjXH/gift1.png",
     images: [
-      "https://i.ibb.co/tMxDT5wF/Gift-Hampers.png",
-      "https://i.ibb.co/hxtrmvGp/Adobe-Express-Photos-23b7ea52fb6b4627b81887b25f53bd3a-Copy-Edited.png", // add URL
-      "https://i.ibb.co/5WsGjgFw/Adobe-Express-Photos-104500d48fb44b8e9e8e9cd07fb87f56-Copy-Edited.png", // add URL
-      "https://i.ibb.co/DPccQTcL/Adobe-Express-Photos-51e708b46525406b8dc16f763fabcab7-Copy-Edited.png",
-      "https://i.ibb.co/7tv7kSM3/Adobe-Express-Photos-894aa920aea7401d9fe7c4ffc6e27caa-Copy-Edited.png", // add URL
+      "https://i.ibb.co/GvssjgqN/gift2.png",
+      "https://i.ibb.co/KxkCbjXH/gift1.png", // add URL
+      "https://i.ibb.co/0pc1vf8c/gift3.png", // add URL
+      "https://i.ibb.co/xSzNMtfm/gift4.png",
+      "https://i.ibb.co/yFFVv1YB/gift5.png", // add URL
+      "https://i.ibb.co/wNwY54Rr/gift6.png",
+      "https://i.ibb.co/fVmrP3Lw/gift7.png",
+      "https://i.ibb.co/dwRFSnCK/gifts8.png",
+      "https://i.ibb.co/spcLQMZG/gift9.png",
+      "https://i.ibb.co/wZMzK2mq/giftadmin.png",
+      "https://i.ibb.co/84YX0Ln5/giftsadmin.png",
     ],
     link: "https://blog-three-kohl-26.vercel.app/category", // add final URL
     intro:
