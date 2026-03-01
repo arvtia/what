@@ -1,9 +1,55 @@
 import { InvertedCorner } from "../NordenNavbar";
-import {motion} from "motion/react"
+import { motion } from "motion/react";
 
- export const PROJECTS = [
-  { 
-    id: 1,
+export const PROJECTS = [
+  {
+    id: 1, // Assuming this follows your Gift Hampers project
+    year: 2024,
+    title: "Pamed Pharma",
+    type: "Healthcare Inventory & CMS",
+    image: "https://i.ibb.co/Y7p39ssS/pamedparma1.png", // Replace with your actual main screenshot
+    images: [
+      "https://i.ibb.co/h1R3xpr3/pamed2.png",
+      "https://i.ibb.co/m5H4mWGy/pamed3.png",
+      "https://i.ibb.co/C57X2Jm2/PAMED4.png",
+      "https://i.ibb.co/RT3qz9VT/PAMED5.png",
+      "https://i.ibb.co/nsSzvrPB/PAMED6.png",
+      "https://i.ibb.co/L3Pb3Bh/PAMED7.png",
+    ],
+    link: "https://pamedpharma.vercel.app", // Your project URL
+    intro:
+      "A sophisticated pharmaceutical management ecosystem built for reliability. It combines a high-performance Go backend with a polished Next.js administrative suite to manage medical inventory, detailed chemical compositions, and complex supply chain data.",
+    problem:
+      "Pharmaceutical inventories require high precision. Generic e-commerce solutions lack the specialized fields needed for medical regulations, such as detailed ingredient compositions, batch tracking, and bulk CSV synchronization across large catalogs.",
+    solution:
+      "Developed a robust full-stack application featuring a Go (Gin) REST API with GORM for PostgreSQL. Implemented a unique multi-image reconciliation logic for product galleries and a double-delimited CSV parser to handle complex 'Ingredient:Amount' data structures during bulk imports.",
+    outcomes: [
+      "Streamlined medical data entry with specialized composition and header fields",
+      "Enabled instant bulk updates via custom CSV sync logic, reducing admin overhead by 80%",
+      "Maintained high performance with a Go-compiled backend capable of handling heavy concurrent requests",
+    ],
+    highlights: [
+      "Custom Multi-Image Upload & Reconciliation logic",
+      "Dynamic Medical Composition Table with JSON serialization",
+      "Bulk Inventory CSV Export/Import with data integrity checks",
+    ],
+    stack: [
+      "Next.js 14",
+      "Go (Golang)",
+      "Gin Gonic",
+      "GORM",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Lucide React",
+      "ImgBB API",
+      "TypeScript",
+      "JWT Auth",
+    ],
+    role: "Lead Full-Stack Engineer & System Architect",
+    status: "Completed / Production Ready",
+  },
+  {
+    id: 2,
     year: 2025,
     title: "Gift Hampers",
     type: "E-commerce Business",
@@ -13,7 +59,7 @@ import {motion} from "motion/react"
       "https://i.ibb.co/hxtrmvGp/Adobe-Express-Photos-23b7ea52fb6b4627b81887b25f53bd3a-Copy-Edited.png", // add URL
       "https://i.ibb.co/5WsGjgFw/Adobe-Express-Photos-104500d48fb44b8e9e8e9cd07fb87f56-Copy-Edited.png", // add URL
       "https://i.ibb.co/DPccQTcL/Adobe-Express-Photos-51e708b46525406b8dc16f763fabcab7-Copy-Edited.png",
-      "https://i.ibb.co/7tv7kSM3/Adobe-Express-Photos-894aa920aea7401d9fe7c4ffc6e27caa-Copy-Edited.png"  // add URL
+      "https://i.ibb.co/7tv7kSM3/Adobe-Express-Photos-894aa920aea7401d9fe7c4ffc6e27caa-Copy-Edited.png", // add URL
     ],
     link: "https://blog-three-kohl-26.vercel.app/category", // add final URL
     intro:
@@ -25,12 +71,12 @@ import {motion} from "motion/react"
     outcomes: [
       "Reduced catalog management time via admin CRUD and bulk operations",
       "Higher conversion with clean product detail pages and trust cues",
-      "Operational visibility through order codes, statuses, and basic tracking"
+      "Operational visibility through order codes, statuses, and basic tracking",
     ],
     highlights: [
       "Apple‑style polish with Tailwind and Framer Motion",
       "Secure JWT auth and admin permissions",
-      "Razorpay integration with server-verified payment intents"
+      "Razorpay integration with server-verified payment intents",
     ],
     stack: [
       "Next.js",
@@ -41,13 +87,13 @@ import {motion} from "motion/react"
       "Cloudinary",
       "Razorpay",
       "Node.js",
-      "Express.js"
+      "Express.js",
     ],
     role: "Product architect, full‑stack developer, and UI/UX designer",
-    status: "Ongoing"
+    status: "Ongoing",
   },
   {
-    id: 2,
+    id: 3,
     year: 2025,
     title: "Dropitall.in",
     type: "Cloud Storage",
@@ -57,7 +103,7 @@ import {motion} from "motion/react"
       "https://i.ibb.co/9zP7vm4/Adobe-Express-Photos-6f32f6cf99cf45a190e244babc6d46a7-Copy-Edited.png", // add URL
       "https://i.ibb.co/9m7SV0F6/Adobe-Express-Photos-f7689cf802244205aa7cc7fd3e18cdad-Copy-Edited.png", // add URL
       "https://i.ibb.co/SwDVg7qh/Adobe-Express-Photos-bdbc57276a6f45e3a3e7bbd4feeb3051-Copy-Edited.png",
-      "https://i.ibb.co/vxzFjBGv/Adobe-Express-Photos-8bb89b28129340ad8fe413e03a921952-Copy-Edited.png"  // add URL
+      "https://i.ibb.co/vxzFjBGv/Adobe-Express-Photos-8bb89b28129340ad8fe413e03a921952-Copy-Edited.png", // add URL
     ],
     link: "https://www.dropitall.in/", // add final URL
     intro:
@@ -69,12 +115,12 @@ import {motion} from "motion/react"
     outcomes: [
       "Consistently fast uploads and reliable sharing with concise UX",
       "Lower support overhead thanks to obvious UI and predictable flows",
-      "Maintainable codebase with scalable API design and clear permission separation"
+      "Maintainable codebase with scalable API design and clear permission separation",
     ],
     highlights: [
       "Type‑safe state management (Zustand/Redux Toolkit)",
       "Polished UI patterns and smooth transitions",
-      "Secure API design with reusable middleware"
+      "Secure API design with reusable middleware",
     ],
     stack: [
       "React",
@@ -83,13 +129,13 @@ import {motion} from "motion/react"
       "Zustand/Redux Toolkit",
       "Node.js",
       "Express.js",
-      "MongoDB Atlas"
+      "MongoDB Atlas",
     ],
     role: "Full‑stack developer and systems designer",
-    status: "Active development"
+    status: "Active development",
   },
   {
-    id:3,
+    id: 4,
     year: 2025,
     title: "Couple's Connect",
     type: "Calendar & Memory Sharing",
@@ -100,7 +146,7 @@ import {motion} from "motion/react"
       "https://i.ibb.co/qM7gF6Hm/Adobe-Express-Photos-39928870dae1495982ebf96051d5562a-Copy-Edited.png", // add URL
       "https://i.ibb.co/yntqYjmw/Adobe-Express-Photos-ac33724bf2f540fe88eb9f0d9f34c1a7-Copy-Edited.png", // add URL
       "https://i.ibb.co/pv0DB7T6/Adobe-Express-Photos-5e8dfea3757c4328a8489a79ed56f8ae-Copy-Edited.png",
-      "https://i.ibb.co/fVJtYNQY/Adobe-Express-Photos-e9eaf6a385764431bb23b2e37a326599-Copy-Edited.png" ,
+      "https://i.ibb.co/fVJtYNQY/Adobe-Express-Photos-e9eaf6a385764431bb23b2e37a326599-Copy-Edited.png",
       "https://i.ibb.co/0Vmmf0Nh/Adobe-Express-Photos-c6ab14d46d8b461c86704cd3b831fe67-Copy-Edited.png",
       "https://i.ibb.co/n8wL4h64/Adobe-Express-Photos-a06d9cc740474889a92efc1e81bb7c30-Copy-Edited.png",
       "https://i.ibb.co/GQDsP8w0/Adobe-Express-Photos-29b14bb91f834c74af20a29b33991e85-Copy-Edited.png",
@@ -115,12 +161,12 @@ import {motion} from "motion/react"
     outcomes: [
       "Higher engagement via simple, joyful interactions",
       "Trust through privacy‑first design and clear boundaries",
-      "Foundational feature set ready for incremental growth (reminders, media)"
+      "Foundational feature set ready for incremental growth (reminders, media)",
     ],
     highlights: [
       "Elegant UI micro‑interactions",
       "Clear information hierarchy and compact layouts",
-      "Scalable schema for events, notes, and shared media"
+      "Scalable schema for events, notes, and shared media",
     ],
     stack: [
       "Next.js",
@@ -128,13 +174,13 @@ import {motion} from "motion/react"
       "Tailwind CSS",
       "Framer Motion",
       "Node.js",
-      "MongoDB Atlas"
+      "MongoDB Atlas",
     ],
     role: "Product designer and front‑end engineer",
-    status: "Prototype live"
+    status: "Prototype live",
   },
   {
-    id:4,
+    id: 5,
     year: 2025,
     title: "Gen Blue Ecomm",
     type: "Fast E-commerce",
@@ -145,7 +191,7 @@ import {motion} from "motion/react"
       "https://i.ibb.co/GQDc8LfF/Adobe-Express-Photos-9857aa976cbd40808a3dfdf917d18b9e-Copy-Edited.png",
       "https://i.ibb.co/0y7gGyQb/Adobe-Express-Photos-b9fb0c409da44a948ad24f76d2caf7ff-Copy-Edited.png",
       "https://i.ibb.co/rGYBKkFK/Adobe-Express-Photos-0c85ad8a4566446aa6f8c2da02a5bfac-Copy-Edited.png",
-       // add URL
+      // add URL
     ],
     link: "https://gen-blue.vercel.app/", // add final URL
     intro:
@@ -157,12 +203,12 @@ import {motion} from "motion/react"
     outcomes: [
       "Snappy browsing and smoother conversions",
       "Resilient order management with safer updates and bulk operations",
-      "Cleaner developer workflow via single‑responsibility components and typed API contracts"
+      "Cleaner developer workflow via single‑responsibility components and typed API contracts",
     ],
     highlights: [
       "Admin CRUD with bulk update routes",
       "Strong error handling and validation",
-      "Delightful UI interactions (tooltips, sliders, transitions)"
+      "Delightful UI interactions (tooltips, sliders, transitions)",
     ],
     stack: [
       "Next.js",
@@ -173,11 +219,11 @@ import {motion} from "motion/react"
       "Node.js",
       "Express.js",
       "MongoDB Atlas",
-      "Razorpay"
+      "Razorpay",
     ],
     role: "Full‑stack engineer and UI perfectionist",
-    status: "Live and evolving"
-  }
+    status: "Live and evolving",
+  },
 ];
 
 const NordenProjectMarquee = () => {
@@ -187,7 +233,9 @@ const NordenProjectMarquee = () => {
   return (
     <div className="mt-3 bg-[#F9F9F9] rounded-md overflow-hidden">
       <div className="relative bg-white w-fit mb-5 rounded-br-2xl shadow-sm">
-        <h2 className="text-xl px-2 pr-3 py-2 text-neutral-800">Featured work</h2>
+        <h2 className="text-xl px-2 pr-3 py-2 text-neutral-800">
+          Featured work
+        </h2>
         <InvertedCorner className="absolute rotate-180 text-white" />
         <InvertedCorner className="absolute rotate-180 text-white top-0 -right-6" />
       </div>
@@ -201,7 +249,7 @@ const NordenProjectMarquee = () => {
               target="_blank"
               rel="noopener noreferrer"
               initial="initial"
-              whileHover="hover" 
+              whileHover="hover"
               className="relative w-[350px] md:w-[450px] flex-shrink-0 cursor-pointer"
             >
               <div className="aspect-[16/10] bg-stripes-light relative overflow-hidden border border-neutral-200 rounded-lg">
@@ -209,27 +257,36 @@ const NordenProjectMarquee = () => {
                   src={project.image}
                   alt={project.title}
                   variants={{
-                    initial: { top: "64px", left: "64px", filter: "grayscale(100%)" },
-                    hover: { top: "32px", left: "32px", filter: "grayscale(0%)" },
+                    initial: {
+                      top: "64px",
+                      left: "64px",
+                      filter: "grayscale(100%)",
+                    },
+                    hover: {
+                      top: "32px",
+                      left: "32px",
+                      filter: "grayscale(0%)",
+                    },
                   }}
-                  transition={{ 
-                    duration: 0.4, 
-                    ease: "easeOut" 
+                  transition={{
+                    duration: 0.4,
+                    ease: "easeOut",
                   }}
                   className="w-full absolute h-full object-cover rounded-md ring-1 ring-neutral-300 shadow-2xl"
                 />
               </div>
 
-              
               <motion.div
                 variants={{
                   initial: { opacity: 0, y: 10 },
-                  hover: { opacity: 1, y: 0 }
+                  hover: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="absolute top-1/2 left-1/3"
               >
-                <h3 className="text-white font-bold bg-black/50 px-2 py-1 rounded">View Project</h3>
+                <h3 className="text-white font-bold bg-black/50 px-2 py-1 rounded">
+                  View Project
+                </h3>
               </motion.div>
             </motion.a>
           ))}
@@ -238,8 +295,12 @@ const NordenProjectMarquee = () => {
 
       <style jsx global>{`
         @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
         }
         .animate-marquee {
           animation: marquee 30s linear infinite;
