@@ -13,7 +13,6 @@ import NordenVersion, {
 } from "./pages/NordenVersion";
 import NordenBlogMain from "./pages/NordenTheme/components/blogs/NordenBlogMain";
 import NordernBlogPage from "./pages/NordenTheme/components/blogs/NordernBlogPage";
-import ExperienceTimeline from "./pages/NordenTheme/components/blogs/ExpData";
 import ExperienceComponent from "./pages/NordenTheme/components/component-with-code/ExperienceComponet";
 
 function App() {
