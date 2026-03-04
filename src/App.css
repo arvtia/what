@@ -24,3 +24,16 @@
 .custom-scrollbar::-webkit-scrollbar-button {
   display: none; /* removes arrow buttons */
 }
+
+
+/* Custom curve for the experience tree branch */
+.exp-branch {
+  position: absolute;
+  left: 18px; /* Adjust based on logo size */
+  top: 40px;  /* Starts below the logo */
+  width: 20px;
+  height: 24px;
+  border-left: 2px solid #e2e8f0;
+  border-bottom: 2px solid #e2e8f0;
+  border-bottom-left-radius: 12px;
+}

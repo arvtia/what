@@ -1,0 +1,87 @@
+import "./exp.css";
+import React from "react";
+
+const experiences = [
+  {
+    company: "Freelance",
+    logoColor: "bg-orange-500",
+    role: "Software Developer",
+    duration: "Jul 2025 - Present",
+    location: "Remote",
+    type: "Freelance",
+    isLatest: true,
+  },
+  {
+    company: "IZS Technocrats Pvt Ltd",
+    logoColor: "bg-blue-600",
+    role: "Full Stack Developer Intern",
+    duration: "Dec 2024 - Jul 2025 (8 m)",
+    location: "Delhi, India",
+    type: "Internship",
+    isLatest: false,
+  },
+];
+
+const ExperienceTimeline = () => {
+  return (
+    <div className="w-full max-w-lg mx-auto py-12 px-4 bg-white select-none">
+      <h2 className="text-xl font-bold text-gray-900 mb-8 px-2">Experience</h2>
+
+      <div className="relative">
+        {experiences.map((exp, i) => (
+          <div key={i} className="relative mb-10 last:mb-0">
+            {/* 1. Company Logo & Name */}
+            <div className="flex items-center gap-3 relative z-10">
+              <div
+                className={`w-8 h-8 rounded-full ${exp.logoColor} flex items-center justify-center text-white font-bold text-[10px] shadow-sm shrink-0`}
+              >
+                {exp.company.charAt(0)}
+              </div>
+              <span className="text-[15px] font-semibold text-gray-800 tracking-tight">
+                {exp.company}
+              </span>
+            </div>
+
+            {/* 2. Role Content Area */}
+            <div className="relative ml-4 pl-7 pt-2">
+              {/* The "L" Branch Connector */}
+              {/* We align the top of the line to the vertical center of the logo above it */}
+              <div
+                className={`absolute left-0 top-[-16px] w-[18px] h-[32px] border-l-2 border-b-2 rounded-bl-xl transition-colors duration-500`}
+                style={{ borderColor: exp.isLatest ? "#22c55e" : "#e5e7eb" }}
+              />
+
+              {/* Role Title & Metadata */}
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-1.5">
+                  <h3 className="text-[14px] font-bold text-gray-900 tracking-tight">
+                    {exp.role}
+                  </h3>
+                  {/* Verified Badge */}
+                  <svg
+                    className="w-4 h-4 text-green-500 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" />
+                  </svg>
+                </div>
+
+                {/* Smaller, Muted Metadata */}
+                <div className="flex items-center flex-wrap gap-1 text-[12px] text-gray-400 font-medium">
+                  <span>{exp.duration}</span>
+                  <span className="opacity-40">•</span>
+                  <span>{exp.location}</span>
+                  <span className="opacity-40">•</span>
+                  <span>{exp.type}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ExperienceTimeline;

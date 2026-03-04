@@ -11,6 +11,7 @@ import NordenProjectView from "./NordenTheme/components/Projects/NordenProjectVi
 import NordenProjectPhoto from "./NordenTheme/components/Projects/ProjectPhoto";
 import NordenProjectDetails from "./NordenTheme/components/Projects/NorderOneProjectPage";
 import NordenLetsTalkPage from "./NordenTheme/components/contact/NordenPage";
+import ExperienceTimeline from "./NordenTheme/components/blogs/ExpData";
 
 const NordenVersion = () => {
   return (
@@ -63,6 +64,8 @@ export const NordenHomePage = () => {
       <NordenCleanUI />
       <NordenRating />
       <NordenProjectMarquee />
+      {/* expierence goes here-- */}
+      <ExperienceTimeline />
       <NordenServices />
       <NordenSocialMedia />
     </>
