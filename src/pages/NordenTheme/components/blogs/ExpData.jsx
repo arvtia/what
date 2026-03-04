@@ -1,4 +1,4 @@
-import { Code, CodeSimple } from "phosphor-react";
+import { CodeSimple } from "phosphor-react";
 import "./exp.css";
 import { Link } from "react-router-dom";
 
