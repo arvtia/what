@@ -39,29 +39,23 @@ const NordenRating = () => {
 
   return (
     <div className="mb-3 bg-stripes-light mt-3 border border-neutral-100 p-8 rounded-xl min-h-[280px] flex items-center justify-center relative overflow-hidden transition-all duration-500">
-      {/* Label Tag */}
       <div className="absolute top-0 left-0 z-20">
         <div className="relative bg-white shadow-sm px-5 py-2 rounded-br-2xl border-b border-r border-neutral-50">
           <div className="text-sm font-bold tracking-tight text-neutral-400 uppercase">
             Testimonies
           </div>
-          <InvertedCorner className="absolute left-0 rotate-180 top-[39px] text-white" />
+          <InvertedCorner className="absolute left-0 rotate-180 top-[36px] text-white" />
           <InvertedCorner className="absolute -right-[24px] rotate-180 top-0 text-white" />
         </div>
       </div>
-
-      {/* Main Content Wrapper - Key triggers the re-animation */}
       <div
         key={current.id}
         className="w-full pt-10 max-w-2xl flex flex-col items-start"
       >
-        {/* Review Text - Blur In Animation */}
         <p className="text-lg md:text-lg text-neutral-800 leading-relaxed font-sans animate-blur-in">
           "{current.text}"
         </p>
-
         <div className="flex gap-4 items-center mt-8 animate-blur-in [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
-          {/* Avatar with subtle scale-up */}
           <div className="size-14 rounded-full overflow-hidden border-2 border-white shadow-md bg-neutral-100 transition-transform duration-700 hover:scale-110">
             <img
               src={current.avatar}
@@ -79,8 +73,6 @@ const NordenRating = () => {
             </p>
           </div>
         </div>
-
-        {/* Progress Dots */}
         <div className="flex gap-2 mt-8">
           {REVIEWS.map((_, i) => (
             <div
