@@ -31,9 +31,9 @@ export default function NordenCleanUI() {
 
       <div className="max-w-5xl mx-auto select-none">
         {/* --- HEADER SECTION --- */}
-        <header className="flex justify-between items-start mb-24">
+        <header className="flex justify-between items-start mb-16 mt-5">
           <div className="flex items-center gap-4">
-            <div className="relative size-14 rounded-full overflow-hidden bg-neutral-200 border border-neutral-100">
+            <div className="relative size-20 ring-2 ring-neutral-300 shadow-2xl rounded-xl overflow-hidden bg-neutral-200 border border-neutral-100">
               <img
                 src="https://i.ibb.co/JR8TxJbX/IMG20250305095541.jpg"
                 alt="Profile"
