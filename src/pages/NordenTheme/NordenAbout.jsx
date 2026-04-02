@@ -106,7 +106,7 @@ export default function NordenCleanUI() {
             </Link>
 
             <a
-              href="/CV-ARVAZ-2026.pdf"
+              href="/CV-ARVAZ-Latest.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-white border border-neutral-200 text-neutral-900 rounded-lg hover:shadow-lg font-bold hover:bg-neutral-50 transition-all w-full md:w-fit text-center"
